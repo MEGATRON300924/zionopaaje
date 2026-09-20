@@ -1,2 +1,7 @@
 import type { MetadataRoute } from "next";
-export default function sitemap(): MetadataRoute.Sitemap { const url="https://zionopaaje.name.ng"; return [{url,lastModified:new Date()}]; }
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const base="https://zionopaaje.name.ng";
+  const paths=["","/about","/projects","/religion","/socials","/contact"];
+  return paths.map(path=>({url:base+path,lastModified:new Date()}));
+}
