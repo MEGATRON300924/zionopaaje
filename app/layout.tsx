@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   title: { default: "Zion Opaaje — Founder, Technology Builder & Creator", template: "%s — Zion Opaaje" },
   description: "The official portfolio and public knowledge graph of Zion Opaaje, also known as MegaTron — founder, technology builder, and creator of The Tron Forge Limited and The MAX AI Ecosystem.",
   alternates: { canonical: siteUrl },
-  openGraph: { title: "Zion Opaaje", description: "Founder, technology builder and creator building digital technologies for the future.", url: siteUrl, siteName: "Zion Opaaje", type: "website", images: [{url: profileImage, alt: "Zion Opaaje"}] },
-  twitter: { card: "summary_large_image", title: "Zion Opaaje", description: "Founder, technology builder and creator.", images: [profileImage] },
+  openGraph: { title: "Zion Opaaje — Founder, Technology Builder & Creator", description: "Official website and public knowledge graph of Zion Opaaje, founder of The Tron Forge Limited and creator of The MAX AI Ecosystem.", url: siteUrl, siteName: "Zion Opaaje", locale: "en_NG", type: "website", images: [{url: profileImage, width: 1200, height: 1200, alt: "Zion Opaaje"}] },
+  twitter: { card: "summary_large_image", title: "Zion Opaaje — Founder, Technology Builder & Creator", description: "Official website and public knowledge graph of Zion Opaaje.", images: [profileImage], creator: "@MEGATRON300924" },
 };
 
 const person = {
