@@ -17,18 +17,21 @@ const person = {
   "@type":"Person","@id":siteUrl+"/#person","name":"Zion Opaaje","alternateName":["MegaTron","MEGATRON300924"],"url":siteUrl,
   "image":{"@type":"ImageObject","@id":siteUrl+"/#profile-image","url":profileImage,"contentUrl":profileImage,"caption":"Zion Opaaje"},
   "nationality":{"@type":"Country","name":"Nigeria"},"jobTitle":["Founder","Technology Builder"],
-  "knowsAbout":["Artificial Intelligence","Software Development","Technology","Digital Products","Entrepreneurship","AI Assistants","AI Agents","Voice AI"],
+  "description":"Zion Opaaje, also known as MegaTron and MEGATRON300924, is a Nigerian technology builder and founder of The Tron Forge Limited. His documented work includes The MAX AI Ecosystem and TTFL Store.",
+  "knowsAbout":["Artificial Intelligence","Software Development","Technology","Digital Products","Entrepreneurship","AI Assistants","AI Agents","Voice AI","Web Development","Backend Development","Cloud Software"],
+  "mainEntityOfPage":{"@id":siteUrl+"/#webpage"},
   "worksFor":{"@id":siteUrl+"/#tron-forge"},"creator":{"@id":siteUrl+"/#max-ai"},"affiliation":[{"@id":siteUrl+"/#tron-forge"},{"@id":siteUrl+"/#ttfl-store"}],
-  "sameAs":["https://github.com/MEGATRON300924","https://commons.wikimedia.org/wiki/File:Zion_Opaaje%27s_Picture.jpg"]
+  "sameAs":["https://github.com/MEGATRON300924","https://commons.wikimedia.org/wiki/File:Zion_Opaaje%27s_Picture.jpg"],
+  "identifier":[{"@type":"PropertyValue","propertyID":"GitHub","value":"MEGATRON300924","url":"https://github.com/MEGATRON300924"}]
 };
 
 const graph = {"@context":"https://schema.org","@graph":[
   person,
-  {"@type":"Organization","@id":siteUrl+"/#tron-forge","name":"The Tron Forge Limited","url":"https://thetronforge.name.ng","founder":{"@id":siteUrl+"/#person"},"foundingDate":"2024-08-01","slogan":"...We Forge The Future..."},
-  {"@type":"SoftwareApplication","@id":siteUrl+"/#max-ai","name":"The MAX AI Ecosystem","url":"https://max-ai.name.ng","creator":{"@id":siteUrl+"/#person"},"publisher":{"@id":siteUrl+"/#tron-forge"},"applicationCategory":"Artificial Intelligence"},
-  {"@type":"Organization","@id":siteUrl+"/#ttfl-store","name":"TTFL Store","url":"https://ttflstore.name.ng","founder":{"@id":siteUrl+"/#person"},"parentOrganization":{"@id":siteUrl+"/#tron-forge"},"foundingDate":"2025-09-01"},
-  {"@type":"WebSite","@id":siteUrl+"/#website","name":"Zion Opaaje","url":siteUrl,"about":{"@id":siteUrl+"/#person"},"publisher":{"@id":siteUrl+"/#person"}},
-  {"@type":"WebPage","@id":siteUrl+"/#webpage","url":siteUrl,"name":"Zion Opaaje — Founder, Technology Builder & Creator","isPartOf":{"@id":siteUrl+"/#website"},"about":{"@id":siteUrl+"/#person"},"primaryImageOfPage":{"@id":siteUrl+"/#profile-image"}}
+  {"@type":"Organization","@id":siteUrl+"/#tron-forge","name":"The Tron Forge Limited","alternateName":"TTFL","url":"https://thetronforge.name.ng","description":"A technology company founded by Zion Opaaje to build digital technologies, software and future-facing products.","founder":{"@id":siteUrl+"/#person"},"foundingDate":"2024-08-01","slogan":"...We Forge The Future...","sameAs":["https://thetronforge.name.ng"]},
+  {"@type":"SoftwareApplication","@id":siteUrl+"/#max-ai","name":"The MAX AI Ecosystem","alternateName":"MAX AI","url":"https://max-ai.name.ng","description":"An AI software ecosystem created by Zion Opaaje and developed through The Tron Forge Limited, centered on MAX AI and connected digital services.","creator":{"@id":siteUrl+"/#person"},"publisher":{"@id":siteUrl+"/#tron-forge"},"applicationCategory":"Artificial Intelligence","operatingSystem":"Web","sameAs":["https://max-ai.name.ng"]},
+  {"@type":"Organization","@id":siteUrl+"/#ttfl-store","name":"TTFL Store","alternateName":"TTFL Store by The Tron Forge Limited","url":"https://ttflstore.name.ng","description":"A marketplace platform built by The Tron Forge Limited, with web, mobile and shared backend systems.","founder":{"@id":siteUrl+"/#person"},"parentOrganization":{"@id":siteUrl+"/#tron-forge"},"foundingDate":"2025-09-01","sameAs":["https://ttflstore.name.ng"]},
+  {"@type":"WebSite","@id":siteUrl+"/#website","name":"Zion Opaaje","alternateName":"Zion Opaaje Official Website","url":siteUrl,"description":"The official website, portfolio and public knowledge graph for Zion Opaaje.","about":{"@id":siteUrl+"/#person"},"publisher":{"@id":siteUrl+"/#person"},"inLanguage":"en","keywords":["Zion Opaaje","MegaTron","MEGATRON300924","The Tron Forge Limited","The MAX AI Ecosystem","TTFL Store"]},
+  {"@type":"WebPage","@id":siteUrl+"/#webpage","url":siteUrl,"name":"Zion Opaaje — Founder, Technology Builder & Creator","description":"Official public profile of Zion Opaaje, including his biography, work, projects, organizations, skills, education, timeline, media and public profiles.","isPartOf":{"@id":siteUrl+"/#website"},"about":{"@id":siteUrl+"/#person"},"mainEntity":{"@id":siteUrl+"/#person"},"primaryImageOfPage":{"@id":siteUrl+"/#profile-image"},"dateModified":"2026-09-20","inLanguage":"en"}
 ]};
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
