@@ -47,6 +47,6 @@ export default function Home(){
     <section className="section graph-section" id="knowledge-graph"><div className="section-head"><p className="eyebrow">KNOWLEDGE GRAPH</p><h2>One identity. Connected work.</h2><p>The public site is organized around stable entities and relationships so people and machines can understand how Zion, his organizations, products, projects, skills and profiles connect.</p></div><div className="graph"><div className="node center">Zion Opaaje<small>Person</small></div><div className="line l1"/><div className="line l2"/><div className="line l3"/><div className="node n1">The Tron Forge Limited<small>Organization</small></div><div className="node n2">The MAX AI Ecosystem<small>Software / AI ecosystem</small></div><div className="node n3">TTFL Store<small>Marketplace</small></div></div></section>
 
     <section className="section contact" id="contact"><p className="eyebrow">CONTACT</p><h2>Let’s build what comes next.</h2><p>For collaborations, technology, products and business enquiries.</p><a className="primary" href="mailto:info@thetronforge.name.ng">Get in touch ↗</a></section>
-    <footer><div><strong>ZION OPA AJE</strong><span>...We Forge The Future...</span></div><p>© 2026 Zion Opaaje. Built as a living public knowledge graph.</p><a href="#about">Back to top ↑</a></div></footer>
+    <footer><div><strong>ZION OPA AJE</strong><span>...We Forge The Future...</span></div><p>© 2026 Zion Opaaje. Built as a living public knowledge graph.</p><a href="#about">Back to top ↑</a></footer>
   </main>
 }
