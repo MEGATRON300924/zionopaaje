@@ -4,16 +4,16 @@ import { useState } from "react";
 
 const sections = ["About","Work","Knowledge","Experience","Education","Timeline","Gallery","Media","Profiles","Knowledge Graph","Contact"];
 const projects = [
-  {name:"The MAX AI Ecosystem",type:"AI ecosystem",status:"In development",desc:"An AI ecosystem by The Tron Forge Limited, centered on MAX AI and a connected family of services.",href:"https://max-ai.name.ng"},
-  {name:"TTFL Store",type:"Marketplace",status:"In development",desc:"A marketplace platform by The Tron Forge Limited with web, mobile and shared backend systems.",href:"https://ttflstore.name.ng"},
+  {name:"The MAX AI Ecosystem",type:"AI ecosystem",status:"In development",desc:"An AI ecosystem by The Tron Forge Limited, centered on MAX AI and a connected family of services.",href:"https://max-ai.name.ng",logo:"https://max-ai.name.ng/favicon.png",logoAlt:"MAX AI logo"},
+  {name:"TTFL Store",type:"Marketplace",status:"In development",desc:"A marketplace platform by The Tron Forge Limited with web, mobile and shared backend systems.",href:"https://ttflstore.name.ng",logo:"https://max-ai.name.ng/ttfl.png",logoAlt:"The Tron Forge Limited logo"},
   {name:"The Tron Forge Limited",type:"Technology company",status:"Founded 2024",desc:"A technology company focused on building digital technologies and products for the future.",href:"https://thetronforge.name.ng"}
 ];
 const maxServices = ["MAX AI","MAX Home","MAX Voice","MAX Cloud","MAX Browser","MAX Connect","MAX Store","MAX Studio","MAX Security","MAX Pay","MAX OS"];
 const skills = ["Artificial Intelligence","Software Development","Web Development","AI Assistants","AI Agents","Voice AI","JavaScript","TypeScript","Python","React","Next.js","Node.js","Express","PostgreSQL","Prisma","GitHub","Vercel","Render"];
 const gallery = [
   {title:"Zion Opaaje",cat:"Personal",text:"Profile photograph",image:"https://www.max-ai.name.ng/zionopaaje.png"},
-  {title:"MAX AI",cat:"MAX AI",text:"Product and interface moments"},
-  {title:"The Tron Forge",cat:"The Tron Forge",text:"Company and building moments"},
+  {title:"MAX AI",cat:"MAX AI",text:"Product and interface moments",image:"https://max-ai.name.ng/favicon.png"},
+  {title:"The Tron Forge",cat:"The Tron Forge",text:"Company and building moments",image:"https://max-ai.name.ng/ttfl.png"},
   {title:"TTFL Store",cat:"TTFL Store",text:"Marketplace development"},
   {title:"Development",cat:"Development",text:"Code, prototypes and experiments"},
   {title:"Projects",cat:"Projects",text:"Selected work and experiments"}
@@ -28,7 +28,7 @@ export default function Home(){
 
     <section className="hero" id="about"><div className="hero-copy"><p className="eyebrow">ZION OPA AJE · MEGATRON · TECHNOLOGY BUILDER</p><h1>Building digital<br/><em>technologies for the future.</em></h1><p className="lead">I’m Zion Opaaje, also known as MegaTron. I build software, AI products and digital ventures through The Tron Forge Limited.</p><div className="actions"><a href="#work" className="primary">Explore my work ↗</a><a href="#knowledge-graph" className="secondary">Explore the graph</a></div><div className="identity"><span>Founder · The Tron Forge Limited</span><span>Creator · The MAX AI Ecosystem</span><span>Founder / Builder · TTFL Store</span></div></div><div className="hero-profile"><div className="portrait-frame"><img src="https://www.max-ai.name.ng/zionopaaje.png" alt="Zion Opaaje" /></div><div className="portrait-caption"><strong>Zion Opaaje</strong><span>MegaTron · MEGATRON300924</span></div></div></section>
 
-    <section className="section" id="work"><div className="section-head"><p className="eyebrow">WORK</p><h2>Things I’m building.</h2><p>Projects, products and organizations connected to my work.</p></div><div className="cards">{projects.map(p=><article className="card" key={p.name}><div className="card-top"><span>{p.type}</span><b>{p.status}</b></div><h3>{p.name}</h3><p>{p.desc}</p><a href={p.href} target="_blank" rel="noreferrer">Visit project ↗</a></article>)}</div></section>
+    <section className="section" id="work"><div className="section-head"><p className="eyebrow">WORK</p><h2>Things I’m building.</h2><p>Projects, products and organizations connected to my work.</p></div><div className="cards">{projects.map(p=><article className="card" key={p.name}><div className="card-top"><span>{p.type}</span><b>{p.status}</b></div><div className="project-logo"><img src={p.logo} alt={p.logoAlt}/></div><h3>{p.name}</h3><p>{p.desc}</p><a href={p.href} target="_blank" rel="noreferrer">Visit project ↗</a></article>)}</div></section>
 
     <section className="section dark" id="knowledge"><div className="section-head"><p className="eyebrow">KNOWLEDGE</p><h2>Tools, technologies & ideas.</h2><p>Areas and technologies represented by my documented work.</p></div><div className="tags">{skills.map(x=><span key={x}>{x}</span>)}</div><div className="subsection"><h3>The MAX AI Ecosystem</h3><div className="tags muted">{maxServices.map(x=><span key={x}>{x}</span>)}</div></div></section>
 
