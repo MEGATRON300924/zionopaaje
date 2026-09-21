@@ -20,19 +20,46 @@ const interests = [
   "Gaming"
 ];
 
+function PixelBlock({ type, label }: { type: "grass" | "stone" | "diamond" | "obsidian"; label: string }) {
+  return (
+    <div className={`pixel-block pixel-${type}`} aria-label={label} title={label}>
+      <span className="pixel-top" />
+      <span className="pixel-side" />
+      <span className="pixel-face" />
+    </div>
+  );
+}
+
 export default function About() {
   return (
     <>
       <SiteNav />
       <main className="page">
-        <section className="page-hero">
-          <p className="eyebrow">ABOUT</p>
-          <h1>Who I am.</h1>
-          <p className="lead">
-            Zion Opaaje, also known as MegaTron and MEGATRON300924, is a Nigerian
-            technology builder, founder and student interested in artificial
-            intelligence, software, digital products and the future of technology.
-          </p>
+        <section className="page-hero about-hero">
+          <div className="about-hero-copy">
+            <p className="eyebrow">ABOUT</p>
+            <h1>Who I am.</h1>
+            <p className="lead">
+              Zion Opaaje, also known as MegaTron and MEGATRON300924, is a Nigerian
+              technology builder, founder and student interested in artificial
+              intelligence, software, digital products and the future of technology.
+            </p>
+          </div>
+
+          <div className="gaming-wall" aria-hidden="true">
+            <div className="wall-grid" />
+            <div className="wall-label">MEGATRON300924</div>
+            <div className="wall-subtitle">BUILD • PLAY • CREATE</div>
+            <div className="floating-block block-a"><PixelBlock type="grass" label="Grass block" /></div>
+            <div className="floating-block block-b"><PixelBlock type="stone" label="Stone block" /></div>
+            <div className="floating-block block-c"><PixelBlock type="diamond" label="Diamond block" /></div>
+            <div className="floating-block block-d"><PixelBlock type="obsidian" label="Obsidian block" /></div>
+            <div className="forge-mark">
+              <span>TTFL</span>
+              <small>THE TRON FORGE</small>
+            </div>
+            <div className="scan-line" />
+          </div>
         </section>
 
         <section className="section split">
@@ -58,6 +85,36 @@ export default function About() {
               not just something I study; it is a space where I like to experiment,
               create and learn by doing.
             </p>
+          </div>
+        </section>
+
+        <section className="section gaming-section">
+          <div className="gaming-section-head">
+            <div>
+              <p className="eyebrow">THE OTHER SIDE</p>
+              <h2>Part builder. Part gamer.</h2>
+            </div>
+            <p>
+              Gaming has been part of how I explore creativity, competition and online
+              communities. My gaming identity is closely connected to MegaTron300924,
+              especially through Minecraft and the communities I have built around it.
+            </p>
+          </div>
+
+          <div className="gaming-stage">
+            <div className="minecraft-sky" />
+            <div className="pixel-sun" />
+            <div className="mountain mountain-one" />
+            <div className="mountain mountain-two" />
+            <div className="ground-layer" />
+            <div className="gaming-sign">
+              <span>MEGATRON</span>
+              <b>300924</b>
+            </div>
+            <div className="stage-block stage-one"><PixelBlock type="grass" label="Grass block" /></div>
+            <div className="stage-block stage-two"><PixelBlock type="diamond" label="Diamond block" /></div>
+            <div className="stage-block stage-three"><PixelBlock type="stone" label="Stone block" /></div>
+            <div className="stage-block stage-four"><PixelBlock type="obsidian" label="Obsidian block" /></div>
           </div>
         </section>
 
@@ -117,6 +174,28 @@ export default function About() {
                 entrepreneurship into something people can use.
               </p>
             </article>
+          </div>
+        </section>
+
+        <section className="section forge-wall-section">
+          <div className="forge-wall">
+            <div className="forge-wall-pattern" />
+            <div className="forge-wall-content">
+              <p className="eyebrow">THE TRON FORGE LIMITED</p>
+              <div className="large-forge-mark">
+                <span>TTFL</span>
+              </div>
+              <h2>...We Forge The Future...</h2>
+              <p>
+                The company behind the technology I am building — from AI systems to
+                digital products and online platforms.
+              </p>
+            </div>
+            <div className="forge-block forge-block-one"><PixelBlock type="obsidian" label="Obsidian block" /></div>
+            <div className="forge-block forge-block-two"><PixelBlock type="diamond" label="Diamond block" /></div>
+            <div className="forge-spark spark-one" />
+            <div className="forge-spark spark-two" />
+            <div className="forge-spark spark-three" />
           </div>
         </section>
 
