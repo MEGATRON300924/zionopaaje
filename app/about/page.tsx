@@ -164,9 +164,6 @@ export default function About() {
             <img className="ttfl-image" src="/ttfl.jpg" alt="The Tron Forge Limited" />
             <div className="forge-wall-content">
               <p className="eyebrow">THE TRON FORGE LIMITED</p>
-              <div className="large-forge-mark">
-                <span>TTFL</span>
-              </div>
               <h2>...We Forge The Future...</h2>
               <p>
                 The company behind the technology I am building — from AI systems to
