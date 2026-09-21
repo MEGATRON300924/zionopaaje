@@ -39,3 +39,6 @@
 .minecraft-art-stage{position:absolute;right:0;bottom:0;width:min(62%,520px);max-height:100%;object-fit:contain;object-position:right bottom;opacity:.82;z-index:2;filter:drop-shadow(0 25px 35px rgba(0,0,0,.35));pointer-events:none}
 .gaming-sign{z-index:5}.gaming-sign a{display:inline-flex;margin-top:16px;border:1px solid #4d5663;border-radius:999px;padding:9px 13px;color:#fff;font:600 10px "DM Sans";letter-spacing:1px;transition:background .2s ease,border-color .2s ease}.gaming-sign a:hover{background:#fff;color:#111;border-color:#fff}.gaming-sign a span{display:inline!important;margin-left:6px;color:inherit;font:inherit;letter-spacing:0}
 @media(max-width:900px){.minecraft-art-stage{width:88%;opacity:.7}.gaming-sign{max-width:82%}.gaming-sign a{font-size:9px}}
+
+/* Blog */
+.blog-empty{background:#eef0f4;min-height:420px;display:flex;align-items:center}.blog-empty-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:45px;max-width:620px;width:100%}.blog-empty-card span{font:600 12px "Space Grotesk";color:var(--muted)}.blog-empty-card h2{margin:45px 0 12px}.blog-empty-card p{max-width:500px}
