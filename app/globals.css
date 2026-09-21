@@ -45,3 +45,6 @@
 
 .ttfl-image{position:absolute;right:6%;top:50%;transform:translateY(-50%);width:min(32%,360px);max-height:78%;object-fit:cover;border:1px solid #3b424d;border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.38);z-index:2}.forge-wall-content{z-index:3}.forge-wall .ttfl-image + .forge-wall-content{padding-right:min(34%,390px)}
 @media(max-width:900px){.ttfl-image{right:7%;top:auto;bottom:7%;transform:none;width:150px;height:150px;max-height:none}.forge-wall .ttfl-image + .forge-wall-content{padding-right:0;max-width:100%}.forge-wall-content{position:relative}.forge-wall h2{max-width:100%}}
+
+
+.education-school{display:flex;align-items:center;gap:14px}.education-school img{width:44px;height:44px;object-fit:contain;flex:0 0 44px}.education-school>div{min-width:0}.education-school strong{margin:0}.education-school span{margin:4px 0 0}@media(max-width:500px){.education-school{gap:11px}.education-school img{width:38px;height:38px;flex-basis:38px}}
