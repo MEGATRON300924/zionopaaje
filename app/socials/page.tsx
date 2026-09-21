@@ -11,7 +11,7 @@ const profiles = [
   ["TikTok", "@MegaTron3000924", "https://www.tiktok.com/@MegaTron3000924"],
   ["GitHub", "MEGATRON300924", "https://github.com/MEGATRON300924"],
   ["X", "@TheTronForgeLTD", "https://x.com/TheTronForgeLTD"],
-  ["YouTube", "The MAX AI Ecosystem", "https://www.youtube.com/@themaxaiecosystem"],
+  ["YouTube", "@opaajezion", "https://youtube.com/@opaajezion"],
   ["The Tron Forge Limited", "Company website", "https://thetronforge.name.ng"],
   ["The MAX AI Ecosystem", "Ecosystem website", "https://max-ai.name.ng"],
   ["TTFL Store", "Marketplace website", "https://ttflstore.name.ng"],
