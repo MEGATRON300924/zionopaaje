@@ -3,7 +3,7 @@ import SiteFooter from "@/components/SiteFooter";
 
 export const metadata = {
   title: "About",
-  description: "About Zion Opaaje — biography, background, education, faith, interests and work."
+  description: "About Zion OPAAJE — biography, background, education, faith, interests and work."
 };
 
 const interests = [
@@ -40,7 +40,7 @@ export default function About() {
             <p className="eyebrow">ABOUT</p>
             <h1>Who I am.</h1>
             <p className="lead">
-              Zion Opaaje, also known as MegaTron and MEGATRON300924, is a Nigerian
+              Zion OPAAJE, also known as MegaTron and MEGATRON300924, is a Nigerian
               technology builder, founder and student interested in artificial
               intelligence, software, digital products and the future of technology.
             </p>
@@ -48,6 +48,7 @@ export default function About() {
 
           <div className="gaming-wall" aria-hidden="true">
             <div className="wall-grid" />
+            <img className="minecraft-art" src="/minecraft.svg" alt="" aria-hidden="true" />
             <div className="wall-label">MEGATRON300924</div>
             <div className="wall-subtitle">BUILD • PLAY • CREATE</div>
             <div className="floating-block block-a"><PixelBlock type="grass" label="Grass block" /></div>
@@ -103,6 +104,7 @@ export default function About() {
 
           <div className="gaming-stage">
             <div className="minecraft-sky" />
+            <img className="minecraft-art-stage" src="/minecraft.svg" alt="" aria-hidden="true" />
             <div className="pixel-sun" />
             <div className="mountain mountain-one" />
             <div className="mountain mountain-two" />
@@ -110,6 +112,7 @@ export default function About() {
             <div className="gaming-sign">
               <span>MEGATRON</span>
               <b>300924</b>
+              <a href="https://youtube.com/@opaajezion" target="_blank" rel="noreferrer">WATCH MY GAMING CHANNEL <span>↗</span></a>
             </div>
             <div className="stage-block stage-one"><PixelBlock type="grass" label="Grass block" /></div>
             <div className="stage-block stage-two"><PixelBlock type="diamond" label="Diamond block" /></div>
@@ -206,7 +209,7 @@ export default function About() {
           </div>
           <div className="info-block">
             <strong>Jehovah’s Witness</strong>
-            <span>Zion Opaaje is also a baptized Jehovah’s Witness.</span>
+            <span>Zion OPAAJE is also a baptized Jehovah’s Witness.</span>
             <p>
               My faith is an important part of my identity and personal life.
             </p>
