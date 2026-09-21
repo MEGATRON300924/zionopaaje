@@ -48,3 +48,6 @@
 
 
 .education-school{display:flex;align-items:center;gap:14px}.education-school img{width:44px;height:44px;object-fit:contain;flex:0 0 44px}.education-school>div{min-width:0}.education-school strong{margin:0}.education-school span{margin:4px 0 0}@media(max-width:500px){.education-school{gap:11px}.education-school img{width:38px;height:38px;flex-basis:38px}}
+
+
+.home-visual-strip{display:flex;align-items:center;justify-content:center;gap:18px;padding:34px 8vw;background:var(--bg)}.home-visual-strip a{width:82px;height:82px;border:1px solid var(--line);border-radius:14px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.home-visual-strip a:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.08)}.home-visual-strip img{width:100%;height:100%;object-fit:contain;padding:9px;display:block}.home-visual-strip a:first-child img{object-fit:cover;padding:0}@media(max-width:500px){.home-visual-strip{padding:28px 6vw;gap:12px}.home-visual-strip a{width:68px;height:68px;border-radius:12px}}
