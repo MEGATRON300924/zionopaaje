@@ -20,16 +20,6 @@ const interests = [
   "Gaming"
 ];
 
-function PixelBlock({ type, label }: { type: "grass" | "stone" | "diamond" | "obsidian"; label: string }) {
-  return (
-    <div className={`pixel-block pixel-${type}`} aria-label={label} title={label}>
-      <span className="pixel-top" />
-      <span className="pixel-side" />
-      <span className="pixel-face" />
-    </div>
-  );
-}
-
 export default function About() {
   return (
     <>
@@ -51,14 +41,6 @@ export default function About() {
             <img className="minecraft-art" src="/minecraft.svg" alt="" aria-hidden="true" />
             <div className="wall-label">MEGATRON300924</div>
             <div className="wall-subtitle">BUILD • PLAY • CREATE</div>
-            <div className="floating-block block-a"><PixelBlock type="grass" label="Grass block" /></div>
-            <div className="floating-block block-b"><PixelBlock type="stone" label="Stone block" /></div>
-            <div className="floating-block block-c"><PixelBlock type="diamond" label="Diamond block" /></div>
-            <div className="floating-block block-d"><PixelBlock type="obsidian" label="Obsidian block" /></div>
-            <div className="forge-mark">
-              <span>TTFL</span>
-              <small>THE TRON FORGE</small>
-            </div>
             <div className="scan-line" />
           </div>
         </section>
@@ -114,10 +96,6 @@ export default function About() {
               <b>300924</b>
               <a href="https://youtube.com/@opaajezion" target="_blank" rel="noreferrer">WATCH MY GAMING CHANNEL <span>↗</span></a>
             </div>
-            <div className="stage-block stage-one"><PixelBlock type="grass" label="Grass block" /></div>
-            <div className="stage-block stage-two"><PixelBlock type="diamond" label="Diamond block" /></div>
-            <div className="stage-block stage-three"><PixelBlock type="stone" label="Stone block" /></div>
-            <div className="stage-block stage-four"><PixelBlock type="obsidian" label="Obsidian block" /></div>
           </div>
         </section>
 
@@ -183,6 +161,7 @@ export default function About() {
         <section className="section forge-wall-section">
           <div className="forge-wall">
             <div className="forge-wall-pattern" />
+            <img className="ttfl-image" src="/ttfl.jpg" alt="The Tron Forge Limited" />
             <div className="forge-wall-content">
               <p className="eyebrow">THE TRON FORGE LIMITED</p>
               <div className="large-forge-mark">
