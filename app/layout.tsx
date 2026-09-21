@@ -3,6 +3,7 @@ import "./globals.css";
 
 const siteUrl = "https://zionopaaje.name.ng";
 const profileImage = "https://www.max-ai.name.ng/zionopaaje.png";
+const favicon = favicon;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -11,12 +12,12 @@ export const metadata: Metadata = {
   alternates: { canonical: siteUrl },
   icons: {
     icon: [
-      { url: "/favicon.png", type: "image/png" },
-      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon.png", sizes: "192x192", type: "image/png" }
+      { url: favicon, type: "image/png" },
+      { url: favicon, sizes: "32x32", type: "image/png" },
+      { url: favicon, sizes: "192x192", type: "image/png" }
     ],
-    shortcut: ["/favicon.png"],
-    apple: [{ url: "/favicon.png", type: "image/png" }]
+    shortcut: [favicon],
+    apple: [{ url: favicon, type: "image/png" }]
   },
   openGraph: { title: "Zion Opaaje — Founder, Technology Builder & Creator", description: "Official website and public knowledge graph of Zion Opaaje, founder of The Tron Forge Limited and creator of The MAX AI Ecosystem.", url: siteUrl, siteName: "Zion Opaaje", locale: "en_NG", type: "website", images: [{url: profileImage, width: 1200, height: 1200, alt: "Zion Opaaje"}] },
   twitter: { card: "summary_large_image", title: "Zion Opaaje — Founder, Technology Builder & Creator", description: "Official website and public knowledge graph of Zion Opaaje.", images: [profileImage], creator: "@MEGATRON300924" },
