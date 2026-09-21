@@ -3,7 +3,7 @@ import "./globals.css";
 
 const siteUrl = "https://zionopaaje.name.ng";
 const profileImage = "https://www.max-ai.name.ng/zionopaaje.png";
-const favicon = favicon;
+const favicon = "/favicon.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
