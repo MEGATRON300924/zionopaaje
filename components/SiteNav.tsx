@@ -21,7 +21,7 @@ const links=[
 export default function SiteNav(){
   const [open,setOpen]=useState(false);
   return <header className="nav">
-    <a className="brand" href="/">ZION<span>OPAJE</span></a>
+    <a className="brand" href="/">ZION<span>OPAAJE</span></a>
     <nav className={open?"mobile-open":""}>
       {links.map(([href,label])=><a href={href} key={href} onClick={()=>setOpen(false)}>{label}</a>)}
     </nav>
