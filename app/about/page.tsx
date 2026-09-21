@@ -196,8 +196,13 @@ export default function About() {
             <h2>Learning computer science.</h2>
           </div>
           <div className="info-block">
-            <strong>Miva Open University</strong>
-            <span>Computer Science</span>
+            <div className="education-school">
+              <img src="/mivalogo.png" alt="Miva Open University logo" />
+              <div>
+                <strong>Miva Open University</strong>
+                <span>Computer Science</span>
+              </div>
+            </div>
             <p>
               I study Computer Science while building software and developing
               technology projects outside the classroom.
