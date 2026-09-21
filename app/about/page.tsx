@@ -38,7 +38,7 @@ export default function About() {
 
           <div className="gaming-wall" aria-hidden="true">
             <div className="wall-grid" />
-            <img className="minecraft-art" src="/minecraft.svg" alt="" aria-hidden="true" />
+            <img className="minecraft-art" src="/minecraft-svgrepo-com.svg" alt="" aria-hidden="true" />
             <div className="wall-label">MEGATRON300924</div>
             <div className="wall-subtitle">BUILD • PLAY • CREATE</div>
             <div className="scan-line" />
@@ -86,7 +86,7 @@ export default function About() {
 
           <div className="gaming-stage">
             <div className="minecraft-sky" />
-            <img className="minecraft-art-stage" src="/minecraft.svg" alt="" aria-hidden="true" />
+            <img className="minecraft-art-stage" src="/minecraft-svgrepo-com.svg" alt="" aria-hidden="true" />
             <div className="pixel-sun" />
             <div className="mountain mountain-one" />
             <div className="mountain mountain-two" />
