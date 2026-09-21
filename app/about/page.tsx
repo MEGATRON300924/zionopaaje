@@ -194,8 +194,6 @@ export default function About() {
                 digital products and online platforms.
               </p>
             </div>
-            <div className="forge-block forge-block-one"><PixelBlock type="obsidian" label="Obsidian block" /></div>
-            <div className="forge-block forge-block-two"><PixelBlock type="diamond" label="Diamond block" /></div>
             <div className="forge-spark spark-one" />
             <div className="forge-spark spark-two" />
             <div className="forge-spark spark-three" />
