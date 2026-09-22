@@ -71,6 +71,76 @@ export default function About() {
           </div>
         </section>
 
+        <section className="section split">
+          <div>
+            <p className="eyebrow">CURRENTLY BUILDING</p>
+            <h2>What I’m focused on now.</h2>
+          </div>
+          <div className="info-block">
+            <strong>The MAX AI Ecosystem</strong>
+            <span>AI platform and connected digital services</span>
+            <p>Continuing to develop MAX AI and its wider ecosystem of products, experiences and infrastructure.</p>
+            <strong>TTFL Store</strong>
+            <span>Marketplace platform</span>
+            <p>Building the web, mobile and backend systems that power the marketplace.</p>
+            <strong>The Tron Forge Limited</strong>
+            <span>Technology company</span>
+            <p>Growing the company around practical software, AI and digital products.</p>
+          </div>
+        </section>
+
+        <section className="section dark">
+          <div className="section-heading">
+            <p className="eyebrow">MY ROLES</p>
+            <h2>Different roles. One direction.</h2>
+          </div>
+          <div className="cards three">
+            <article className="card"><span className="card-index">01</span><h3>Founder</h3><p>The Tron Forge Limited — building a technology company around digital products and software.</p></article>
+            <article className="card"><span className="card-index">02</span><h3>Creator</h3><p>The MAX AI Ecosystem — creating an AI platform and connected ecosystem of services.</p></article>
+            <article className="card"><span className="card-index">03</span><h3>Builder</h3><p>TTFL Store — developing a marketplace across web, mobile and backend systems.</p></article>
+          </div>
+        </section>
+
+        <section className="section split">
+          <div>
+            <p className="eyebrow">TECHNICAL KNOWLEDGE</p>
+            <h2>The tools I work with.</h2>
+          </div>
+          <div className="tags light-tags">
+            {["JavaScript","TypeScript","Python","React","Next.js","HTML","CSS","Node.js","Express","PostgreSQL","Prisma","GitHub","Vercel","Render","AI Applications","AI Agents","Voice AI","LLM Applications"].map((skill) => <span key={skill}>{skill}</span>)}
+          </div>
+        </section>
+
+        <section className="section dark split">
+          <div>
+            <p className="eyebrow">JOURNEY</p>
+            <h2>A timeline of building.</h2>
+          </div>
+          <div className="timeline-list">
+            <div><strong>2024</strong><span>Founded The Tron Forge Limited</span><p>Started the company as a foundation for building digital technologies and future-facing products.</p></div>
+            <div><strong>2025</strong><span>Built TTFL Store</span><p>Expanded into e-commerce with a marketplace supported by web, mobile and backend systems.</p></div>
+            <div><strong>2026</strong><span>Expanded The MAX AI Ecosystem</span><p>Continued developing MAX AI and planning a broader family of connected digital services.</p></div>
+            <div><strong>Now</strong><span>Learning, building and iterating</span><p>Continuing to study Computer Science while turning ideas into practical technology projects.</p></div>
+          </div>
+        </section>
+
+        <section className="section split">
+          <div>
+            <p className="eyebrow">IDENTITY</p>
+            <h2>The details behind the name.</h2>
+          </div>
+          <div className="info-block">
+            <strong>Zion Opaaje</strong>
+            <span>Public name</span>
+            <strong>MegaTron</strong>
+            <span>Known online as</span>
+            <strong>MEGATRON300924</strong>
+            <span>Online identity / handle</span>
+            <strong>Nigeria</strong>
+            <span>Country</span>
+          </div>
+        </section>
+
         <section className="section gaming-section">
           <div className="gaming-section-head">
             <div>
