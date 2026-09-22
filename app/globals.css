@@ -60,3 +60,20 @@
 .home-visual-track img.cover-image{object-fit:cover;padding:0}
 @media(max-width:500px){.home-visual-strip{padding:14px 0}.home-visual-track{gap:12px;padding:4px 14px}.home-visual-track a{width:58px;height:58px;flex-basis:58px;border-radius:10px}.home-visual-track img{padding:6px}.home-visual-track img.cover-image{padding:0}}
 @media(prefers-reduced-motion:reduce){.home-visual-track a{transition:none}}
+
+
+/* Site-wide motion */
+.page-hero,.page > .section,.home-intro,.home-visual-strip{animation:contentEnter .8s cubic-bezier(.2,.7,.2,1) both}
+.page-hero{animation-delay:.04s}.page > .section:nth-of-type(2){animation-delay:.1s}.page > .section:nth-of-type(3){animation-delay:.16s}.page > .section:nth-of-type(4){animation-delay:.22s}
+.page .project-row,.page .profile-grid a,.page .card,.page .blog-empty-card,.page .info-block{animation:riseIn .65s cubic-bezier(.2,.7,.2,1) both}
+.page .project-row:nth-child(2),.page .profile-grid a:nth-child(2),.page .card:nth-child(2){animation-delay:.08s}
+.page .project-row:nth-child(3),.page .profile-grid a:nth-child(3),.page .card:nth-child(3){animation-delay:.16s}
+.page .project-row:nth-child(4),.page .profile-grid a:nth-child(4),.page .card:nth-child(4){animation-delay:.24s}
+.page .project-row:nth-child(5),.page .profile-grid a:nth-child(5),.page .card:nth-child(5){animation-delay:.32s}
+.page .project-row:hover,.page .profile-grid a:hover,.page .card:hover,.page .blog-empty-card:hover{transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s ease,background-color .28s ease,border-color .28s ease}
+.page .text-link{display:inline-flex;transition:transform .25s ease,color .25s ease}.page .text-link:hover{transform:translateX(5px)}
+.page-hero .eyebrow{animation:fadeSlide .55s ease both}.page-hero h1{animation:fadeSlide .7s .06s cubic-bezier(.2,.7,.2,1) both}.page-hero .lead{animation:fadeSlide .7s .12s cubic-bezier(.2,.7,.2,1) both}
+@keyframes contentEnter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes fadeSlide{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.page-hero,.page > .section,.home-intro,.home-visual-strip,.page .project-row,.page .profile-grid a,.page .card,.page .blog-empty-card,.page .info-block,.page-hero .eyebrow,.page-hero h1,.page-hero .lead{animation:none!important}.page .text-link{transition:none}}
