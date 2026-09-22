@@ -6,16 +6,23 @@ export const metadata = {
   description: "Official social and online profiles for Zion Opaaje."
 };
 
-const profiles = [
-  ["Instagram", "@opaajezion", "https://www.instagram.com/opaajezion", "/icons8-instagram-96.gif"],
-  ["TikTok", "@MegaTron3000924", "https://www.tiktok.com/@MegaTron3000924", "/icons8-tiktok-96.gif"],
-  ["GitHub", "MEGATRON300924", "https://github.com/MEGATRON300924", null],
-  ["X", "@zionopaaje", "https://x.com/zionopaaje", "/icons8-x-96.png"],
-  ["YouTube", "@opaajezion", "https://youtube.com/@opaajezion", "/icons8-youtube-96.png"],
-  ["The Tron Forge Limited", "Company website", "https://thetronforge.name.ng", null],
-  ["The MAX AI Ecosystem", "Ecosystem website", "https://max-ai.name.ng", null],
-  ["TTFL Store", "Marketplace website", "https://ttflstore.name.ng", null],
-  ["Wikimedia Commons", "Profile image", "https://commons.wikimedia.org/wiki/File:Zion_Opaaje%27s_Picture.jpg", null]
+type Profile = {
+  name: string;
+  detail: string;
+  href: string;
+  icon?: string;
+};
+
+const profiles: Profile[] = [
+  { name: "Instagram", detail: "@opaajezion", href: "https://www.instagram.com/opaajezion", icon: "/icons8-instagram-96.gif" },
+  { name: "TikTok", detail: "@MegaTron3000924", href: "https://www.tiktok.com/@MegaTron3000924", icon: "/icons8-tiktok-96.gif" },
+  { name: "GitHub", detail: "MEGATRON300924", href: "https://github.com/MEGATRON300924" },
+  { name: "X", detail: "@zionopaaje", href: "https://x.com/zionopaaje", icon: "/icons8-x-96.png" },
+  { name: "YouTube", detail: "@opaajezion", href: "https://youtube.com/@opaajezion", icon: "/icons8-youtube-96.png" },
+  { name: "The Tron Forge Limited", detail: "Company website", href: "https://thetronforge.name.ng" },
+  { name: "The MAX AI Ecosystem", detail: "Ecosystem website", href: "https://max-ai.name.ng" },
+  { name: "TTFL Store", detail: "Marketplace website", href: "https://ttflstore.name.ng" },
+  { name: "Wikimedia Commons", detail: "Profile image", href: "https://commons.wikimedia.org/wiki/File:Zion_Opaaje%27s_Picture.jpg" }
 ];
 
 export default function Socials() {
@@ -33,14 +40,18 @@ export default function Socials() {
 
         <section className="section">
           <div className="profile-grid">
-            {profiles.map(([name, detail, href, icon]) => (
-              <a href={href} target="_blank" rel="noreferrer" key={name}>
+            {profiles.map((profile) => (
+              <a href={profile.href} target="_blank" rel="noreferrer" key={profile.name}>
                 <span className="profile-icon" aria-hidden="true">
-                  {icon ? <img src={icon} alt="" /> : <span className="profile-icon-fallback">{name.charAt(0)}</span>}
+                  {profile.icon ? (
+                    <img src={profile.icon} alt="" />
+                  ) : (
+                    <span className="profile-icon-fallback">{profile.name.charAt(0)}</span>
+                  )}
                 </span>
                 <span className="profile-copy">
-                  <strong>{name}</strong>
-                  <span>{detail} →</span>
+                  <strong>{profile.name}</strong>
+                  <span>{profile.detail} →</span>
                 </span>
               </a>
             ))}
