@@ -46,5 +46,5 @@ const graph = {"@context":"https://schema.org","@graph":[
 ]};
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <ClerkProvider><html lang="en"><body>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(graph)}} /></body></html></ClerkProvider>;
+  return <html lang="en"><body><ClerkProvider>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(graph)}} /></ClerkProvider></body></html>;
 }
