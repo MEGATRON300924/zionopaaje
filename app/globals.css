@@ -50,33 +50,13 @@
 .education-school{display:flex;align-items:center;gap:14px}.education-school img{width:44px;height:44px;object-fit:contain;flex:0 0 44px}.education-school>div{min-width:0}.education-school strong{margin:0}.education-school span{margin:4px 0 0}@media(max-width:500px){.education-school{gap:11px}.education-school img{width:38px;height:38px;flex-basis:38px}}
 
 
-.home-visual-strip{width:100%;overflow:hidden;padding:18px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.home-visual-track{display:flex;align-items:center;gap:18px;width:max-content;padding:0 18px;animation:homeCarousel 16s ease-in-out infinite}
-.home-visual-track a{width:72px;height:72px;border:1px solid var(--line);border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;transition:transform .2s ease}
-.home-visual-track a:hover{transform:scale(1.06)}
-.home-visual-track img{width:100%;height:100%;object-fit:contain;padding:8px;display:block}
-.home-visual-track a:first-child img{object-fit:cover;padding:0}
-@keyframes homeCarousel{0%,15%{transform:translateX(0)}25%,40%{transform:translateX(-25%)}50%,65%{transform:translateX(-50%)}75%,90%{transform:translateX(-75%)}100%{transform:translateX(0)}}
-@media(max-width:500px){.home-visual-strip{padding:14px 0}.home-visual-track{gap:12px;padding:0 14px}.home-visual-track a{width:58px;height:58px;border-radius:10px}.home-visual-track img{padding:6px}}
-@media(prefers-reduced-motion:reduce){.home-visual-track{animation:none}}
-
-
-/* Motion + interaction */
-.nav a,.primary,.secondary,.nav-cta,.menu-button,.home-links a,.profile-grid a,.filters button,.gaming-sign a,.card,.photo,.project-row,.portrait-frame{transition:transform .28s cubic-bezier(.2,.7,.2,1),background-color .28s ease,border-color .28s ease,box-shadow .28s ease,color .28s ease,opacity .28s ease}
-.nav nav a{position:relative}.nav nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:1px;background:currentColor;transition:right .3s cubic-bezier(.2,.7,.2,1)}.nav nav a:hover:after,.nav nav a:focus-visible:after{right:0}
-.primary:hover,.nav-cta:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(11,13,18,.16)}.secondary:hover{transform:translateY(-3px);border-color:#aeb4bd;background:#fff;box-shadow:0 10px 25px rgba(11,13,18,.07)}
-.primary span{display:inline-block;transition:transform .28s ease}.primary:hover span{transform:translateX(5px)}
-.home-links a:hover{transform:translateY(-5px)}.home-links a:hover b{letter-spacing:.2px}.card:hover,.project-row:hover{transform:translateY(-4px)}.profile-grid a:hover{transform:translateY(-4px)}
-.photo:hover img{transform:scale(1.045)}.photo img{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
-.portrait-frame{animation:portraitFloat 6s ease-in-out infinite}.portrait-frame:hover{animation-play-state:paused;box-shadow:0 35px 90px rgba(0,0,0,.18)}
-@keyframes portraitFloat{0%,100%{transform:rotate(1.5deg) translateY(0)}50%{transform:rotate(.5deg) translateY(-7px)}}
+.home-visual-strip{width:100%;display:flex;justify-content:center;padding:18px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.home-visual-track{display:flex;align-items:center;justify-content:center;gap:18px;width:min(100%,720px);padding:4px 18px;overflow-x:auto;scrollbar-width:none;cursor:grab;touch-action:pan-y;user-select:none}
+.home-visual-track::-webkit-scrollbar{display:none}
+.home-visual-track.is-dragging{cursor:grabbing}
+.home-visual-track a{width:72px;height:72px;border:1px solid var(--line);border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 72px;transition:transform .2s ease,box-shadow .2s ease}
 .home-visual-track a:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 10px 24px rgba(0,0,0,.1)}
-button:active,.primary:active,.secondary:active,.nav-cta:active{transform:translateY(1px) scale(.98)}
-:focus-visible{outline:2px solid currentColor;outline-offset:4px}
-@supports (animation-timeline:view()){
-  .section,.page-hero,.home-visual-strip,.hero-profile,.hero-copy{animation:scrollReveal linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
-  .card,.project-row,.home-links a,.profile-grid a,.photo{animation:scrollLift linear both;animation-timeline:view();animation-range:entry 0% cover 25%}
-}
-@keyframes scrollReveal{from{opacity:.18;transform:translateY(34px)}to{opacity:1;transform:translateY(0)}}
-@keyframes scrollLift{from{opacity:.3;transform:translateY(26px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
-@media(prefers-reduced-motion:reduce){.portrait-frame{animation:none}.nav a:after{transition:none}.photo img{transition:none}.section,.page-hero,.home-visual-strip,.hero-profile,.hero-copy,.card,.project-row,.home-links a,.profile-grid a,.photo{animation:none!important}.primary,.secondary,.nav-cta,.menu-button,.home-links a,.profile-grid a,.filters button,.gaming-sign a,.card,.photo,.project-row,.portrait-frame{transition:none}}
+.home-visual-track img{width:100%;height:100%;object-fit:contain;padding:8px;display:block;pointer-events:none}
+.home-visual-track img.cover-image{object-fit:cover;padding:0}
+@media(max-width:500px){.home-visual-strip{padding:14px 0}.home-visual-track{gap:12px;padding:4px 14px}.home-visual-track a{width:58px;height:58px;flex-basis:58px;border-radius:10px}.home-visual-track img{padding:6px}.home-visual-track img.cover-image{padding:0}}
+@media(prefers-reduced-motion:reduce){.home-visual-track a{transition:none}}
