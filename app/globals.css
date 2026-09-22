@@ -50,4 +50,12 @@
 .education-school{display:flex;align-items:center;gap:14px}.education-school img{width:44px;height:44px;object-fit:contain;flex:0 0 44px}.education-school>div{min-width:0}.education-school strong{margin:0}.education-school span{margin:4px 0 0}@media(max-width:500px){.education-school{gap:11px}.education-school img{width:38px;height:38px;flex-basis:38px}}
 
 
-.home-visual-strip{width:100%;overflow:hidden;padding:22px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.home-visual-track{display:flex;width:max-content;animation:homeMarquee 22s linear infinite}.home-visual-group{display:flex;align-items:center;gap:18px;padding-right:18px;flex-shrink:0}.home-visual-strip a{width:72px;height:72px;border:1px solid var(--line);border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;transition:transform .2s ease}.home-visual-strip a:hover{transform:scale(1.06)}.home-visual-strip img{width:100%;height:100%;object-fit:contain;padding:8px;display:block}.home-visual-strip .home-visual-group a:first-child img{object-fit:cover;padding:0}@keyframes homeMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}@media(max-width:500px){.home-visual-strip{padding:16px 0}.home-visual-group{gap:12px;padding-right:12px}.home-visual-strip a{width:58px;height:58px;border-radius:10px}.home-visual-strip img{padding:6px}}@media(prefers-reduced-motion:reduce){.home-visual-track{animation:none}}
+.home-visual-strip{width:100%;overflow:hidden;padding:18px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.home-visual-track{display:flex;align-items:center;gap:18px;width:max-content;padding:0 18px;animation:homeCarousel 16s ease-in-out infinite}
+.home-visual-track a{width:72px;height:72px;border:1px solid var(--line);border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;transition:transform .2s ease}
+.home-visual-track a:hover{transform:scale(1.06)}
+.home-visual-track img{width:100%;height:100%;object-fit:contain;padding:8px;display:block}
+.home-visual-track a:first-child img{object-fit:cover;padding:0}
+@keyframes homeCarousel{0%,15%{transform:translateX(0)}25%,40%{transform:translateX(-25%)}50%,65%{transform:translateX(-50%)}75%,90%{transform:translateX(-75%)}100%{transform:translateX(0)}}
+@media(max-width:500px){.home-visual-strip{padding:14px 0}.home-visual-track{gap:12px;padding:0 14px}.home-visual-track a{width:58px;height:58px;border-radius:10px}.home-visual-track img{padding:6px}}
+@media(prefers-reduced-motion:reduce){.home-visual-track{animation:none}}
