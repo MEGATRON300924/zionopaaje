@@ -77,3 +77,22 @@
 @keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @keyframes fadeSlide{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.page-hero,.page > .section,.home-intro,.home-visual-strip,.page .project-row,.page .profile-grid a,.page .card,.page .blog-empty-card,.page .info-block,.page-hero .eyebrow,.page-hero h1,.page-hero .lead{animation:none!important}.page .text-link{transition:none}}
+
+
+/* Social profile icons */
+.profile-grid a{align-items:center}
+.profile-icon{width:48px;height:48px;flex:0 0 48px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+.profile-icon img{width:34px;height:34px;object-fit:contain;display:block}
+.profile-icon-fallback{font:600 18px "Space Grotesk"!important;color:var(--ink)!important}
+.profile-copy{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+.profile-copy strong{font:600 20px "Space Grotesk"}
+.profile-copy span{font:12px "DM Sans";color:#9298a2}
+.profile-grid a:hover .profile-icon{background:#fff}
+.profile-grid a:hover .profile-copy span{color:#bfc4cc}
+@media(max-width:500px){
+  .profile-grid a{padding:18px}
+  .profile-icon{width:42px;height:42px;flex-basis:42px;border-radius:10px}
+  .profile-icon img{width:30px;height:30px}
+  .profile-copy strong{font-size:18px}
+  .profile-copy span{font-size:11px}
+}
