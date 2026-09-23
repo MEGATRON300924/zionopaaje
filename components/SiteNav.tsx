@@ -14,7 +14,6 @@ function Icon({name}:{name:"menu"|"close"|"arrow"|"github"|"mail"}) {
 const links=[
   ["/about","About"],
   ["/projects","Projects"],
-  ["/blog","Blog"],
   ["/socials","Socials"],
   ["/contact","Contact"]
 ];
