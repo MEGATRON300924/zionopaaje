@@ -8,8 +8,20 @@ export const metadata = {
 };
 
 export default function SignInPage() {
+  if (!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) {
+    return (
+      <main className="auth-page">
+        <div className="auth-card">
+          <p className="eyebrow">BLOG ADMIN</p>
+          <h1>Sign-in is not configured yet.</h1>
+          <p>Add the Clerk keys in Vercel before using Google sign-in.</p>
+        </div>
+      </main>
+    );
+  }
+
   return (
-    <ClerkProvider>
+    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
       <main className="auth-page">
         <div className="auth-card">
           <p className="eyebrow">BLOG ADMIN</p>
