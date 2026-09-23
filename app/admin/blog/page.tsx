@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { useUser } from "@clerk/nextjs";
+import { ClerkProvider, useUser } from "@clerk/nextjs";
 import { upload } from "@vercel/blob/client";
 
 const ADMIN_EMAIL = "zopaaje8@gmail.com";
 
-export default function BlogAdminPage() {
+function BlogAdmin() {
+
   const { isLoaded, isSignedIn, user } = useUser();
   const [title, setTitle] = useState("");
   const [slug, setSlug] = useState("");
@@ -94,5 +95,15 @@ export default function BlogAdminPage() {
         </div>
       </div>
     </main>
+  );
+}
+
+}
+
+export default function BlogAdminPage() {
+  return (
+    <ClerkProvider>
+      <BlogAdmin />
+    </ClerkProvider>
   );
 }
