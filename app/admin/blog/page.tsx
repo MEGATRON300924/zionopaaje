@@ -101,8 +101,20 @@ function BlogAdmin() {
 }
 
 export default function BlogAdminPage() {
+  if (!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) {
+    return (
+      <main className="admin-page">
+        <div className="admin-card">
+          <p className="eyebrow">BLOG ADMIN</p>
+          <h1>Authentication is not configured.</h1>
+          <p>Add the Clerk publishable key and secret key to the Vercel project environment variables, then redeploy.</p>
+        </div>
+      </main>
+    );
+  }
+
   return (
-    <ClerkProvider>
+    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
       <BlogAdmin />
     </ClerkProvider>
   );
