@@ -3,21 +3,23 @@
 import { useRef, useState } from "react";
 
 const images = [
-  { src: "/ttfl.jpg", href: "/projects", label: "TTFL Store", cover: true },
-  { src: "/favicon%20(1).png", href: "/about", label: "Zion Opaaje" },
-  { src: "/minecraft-svgrepo-com.svg", href: "/about", label: "Gaming" },
-  { src: "/mivalogo.png", href: "/about", label: "Education" }
+  { src: "/ttfl.jpg", href: "/projects", label: "TTFL Store", alt: "TTFL Store" , cover: true },
+  { src: "/favicon.png", href: "/about", label: "Zion Opaaje", alt: "Zion Opaaje" },
+  { src: "/minecraft-svgrepo-com.svg", href: "/about", label: "Gaming", alt: "Gaming" },
+  { src: "/mivalogo.png", href: "/about", label: "Education", alt: "Miva Open University" }
 ];
 
 export default function ImageCarousel() {
   const trackRef = useRef<HTMLDivElement>(null);
   const [dragging, setDragging] = useState(false);
+  const moved = useRef(false);
   const start = useRef({ x: 0, scroll: 0 });
 
   function begin(e: React.PointerEvent) {
     const el = trackRef.current;
     if (!el) return;
     setDragging(true);
+    moved.current = false;
     start.current = { x: e.clientX, scroll: el.scrollLeft };
     el.setPointerCapture(e.pointerId);
   }
@@ -25,7 +27,9 @@ export default function ImageCarousel() {
   function move(e: React.PointerEvent) {
     const el = trackRef.current;
     if (!dragging || !el) return;
-    el.scrollLeft = start.current.scroll - (e.clientX - start.current.x);
+    const delta = e.clientX - start.current.x;
+    if (Math.abs(delta) > 6) moved.current = true;
+    el.scrollLeft = start.current.scroll - delta;
   }
 
   function end() {
@@ -49,12 +53,12 @@ export default function ImageCarousel() {
             aria-label={image.label}
             key={image.src}
             onClick={(e) => {
-              if (dragging) e.preventDefault();
+              if (moved.current) e.preventDefault();
             }}
           >
             <img
               src={image.src}
-              alt=""
+              alt={image.alt}
               className={image.cover ? "cover-image" : ""}
               draggable={false}
             />
