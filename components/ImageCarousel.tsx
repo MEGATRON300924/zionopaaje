@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 
 const images = [
   { src: "/ttfl.jpg", href: "/projects", label: "TTFL Store", alt: "TTFL Store" , cover: true },
-  { src: "/favicon.png", href: "/about", label: "Zion Opaaje", alt: "Zion Opaaje" },
+  { src: "/favicon%20(1).png", href: "/about", label: "Zion Opaaje", alt: "Zion Opaaje" },
   { src: "/minecraft-svgrepo-com.svg", href: "/about", label: "Gaming", alt: "Gaming" },
   { src: "/mivalogo.png", href: "/about", label: "Education", alt: "Miva Open University" }
 ];
