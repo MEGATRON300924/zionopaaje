@@ -117,3 +117,21 @@
 .building-card span{display:block;font-size:12px;font-weight:700;color:#66707c;margin:7px 0 12px}
 .building-card p{font-size:14px!important;line-height:1.6!important;color:#4a515b!important;margin:0;font-weight:500}
 @media(max-width:900px){.building-grid{grid-template-columns:1fr}.about-photo{max-width:none}}
+
+
+/* About page: roles */
+.roles-section{background:#0a0d12;color:#fff}
+.roles-section .section-heading h2{color:#fff}
+.roles-section .eyebrow{color:#8f98a6}
+.roles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.role-card{min-height:360px;background:#11151b;border:1px solid #2a3039;border-radius:20px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.role-card:hover{transform:translateY(-6px);border-color:#454d59;box-shadow:0 24px 55px rgba(0,0,0,.28)}
+.role-top{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.role-index{font:600 12px "Space Grotesk";letter-spacing:2px;color:#7f8997}
+.role-logo{width:72px;height:72px;border:1px solid #303742;border-radius:16px;background:#f7f8fa;display:flex;align-items:center;justify-content:center;padding:13px;overflow:hidden}
+.role-logo img{width:100%;height:100%;object-fit:contain;display:block}
+.role-content{margin-top:55px}
+.role-label{font:700 10px "DM Sans";letter-spacing:2px;color:#7f8997}
+.role-card h3{font:700 32px "Space Grotesk";letter-spacing:-1px;color:#fff;margin:8px 0 12px}
+.role-card p{font-size:15px!important;line-height:1.65!important;color:#aeb5bf!important;margin:0;max-width:330px;font-weight:500}
+@media(max-width:900px){.roles-grid{grid-template-columns:1fr}.role-card{min-height:320px}.role-content{margin-top:45px}}
