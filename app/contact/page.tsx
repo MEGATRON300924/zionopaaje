@@ -1,4 +1,53 @@
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
-export const metadata={title:"Contact",description:"Contact Zion Opaaje for collaborations, technology, products and business enquiries."};
-export default function Contact(){return <><SiteNav/><main className="page"><section className="page-hero"><p className="eyebrow">CONTACT</p><h1>Let’s build what comes next.</h1><p className="lead">For collaborations, technology, products and business enquiries.</p></section><section className="section split"><div><p className="eyebrow">BUSINESS</p><h2>Get in touch.</h2></div><div className="contact-card"><p>For general enquiries, contact The Tron Forge Limited.</p><a className="primary" href="mailto:info@thetronforge.name.ng">Email info@thetronforge.name.ng →</a><p className="small-note">You can also explore the public profiles and projects from the menu above.</p></div></section></main><SiteFooter/></>;}
+
+export const metadata = {
+  title: "Contact",
+  description: "Contact Zion Opaaje for collaborations, technology, products and business enquiries."
+};
+
+export default function Contact() {
+  return (
+    <>
+      <SiteNav />
+      <main className="page">
+        <section className="page-hero">
+          <p className="eyebrow">CONTACT</p>
+          <h1>Let’s build what comes next.</h1>
+          <p className="lead">For collaborations, technology, products and business enquiries.</p>
+        </section>
+
+        <section className="section split">
+          <div>
+            <p className="eyebrow">BUSINESS</p>
+            <h2>Get in touch.</h2>
+          </div>
+
+          <div className="contact-card">
+            <p>For general enquiries, contact The Tron Forge Limited.</p>
+
+            <div className="contact-actions">
+              <a className="primary" href="mailto:info@thetronforge.name.ng">
+                Email info@thetronforge.name.ng →
+              </a>
+
+              <a
+                className="secondary"
+                href="https://wa.link/hfv0mc"
+                target="_blank"
+                rel="noreferrer"
+              >
+                WhatsApp → 
+              </a>
+            </div>
+
+            <p className="small-note">
+              You can also explore the public profiles and projects from the menu above.
+            </p>
+          </div>
+        </section>
+      </main>
+      <SiteFooter />
+    </>
+  );
+}
