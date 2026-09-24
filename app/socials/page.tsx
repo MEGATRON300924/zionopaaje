@@ -21,7 +21,7 @@ const profiles: Profile[] = [
   { name: "YouTube", detail: "@opaajezion", href: "https://youtube.com/@opaajezion", icon: "/icons8-youtube-96.png" },
   { name: "The Tron Forge Limited", detail: "Company website", href: "https://thetronforge.name.ng", icon: "https://max-ai.name.ng/ttfl.png" },
   { name: "The MAX AI Ecosystem", detail: "Ecosystem website", href: "https://max-ai.name.ng", icon: "https://max-ai.name.ng/favicon.png" },
-  { name: "TTFL Store", detail: "Marketplace website", href: "https://ttflstore.name.ng", icon: "/ttflstore.png" },
+  { name: "TTFL Store", detail: "Marketplace website", href: "https://ttflstore.name.ng", icon: "/ttfl-store.png" },
   { name: "Wikimedia Commons", detail: "Profile image", href: "https://commons.wikimedia.org/wiki/File:Zion_Opaaje%27s_Picture.jpg" }
 ];
 
