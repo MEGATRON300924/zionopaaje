@@ -96,3 +96,24 @@
 
 
 .contact-actions{display:flex;gap:12px;flex-wrap:wrap}.whatsapp-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 22px;border-radius:999px;background:#25D366;color:#fff;font:700 15px "DM Sans";box-shadow:0 10px 25px rgba(37,211,102,.2);transition:transform .2s ease,box-shadow .2s ease,background .2s ease}.whatsapp-button:hover{background:#20bd5a;color:#fff;transform:translateY(-2px);box-shadow:0 14px 30px rgba(37,211,102,.28)}.whatsapp-icon{width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center}.whatsapp-icon svg{width:22px;height:22px;display:block}@media(max-width:500px){.contact-actions{flex-direction:column;align-items:stretch}.contact-actions .primary,.whatsapp-button{justify-content:center}}
+
+/* About page: high-contrast editorial sections */
+.about-page .about-light-section{background:#f7f8fa;color:#10131a}
+.about-page .about-light-section h2,
+.about-page .about-light-section strong{color:#10131a}
+.about-page .about-light-section p{color:#3f4650}
+.about-page .about-light-section .eyebrow{color:#555d68}
+.about-page .about-copy p{font-weight:500}
+.about-photo{margin-top:42px;border-radius:18px;overflow:hidden;position:relative;max-width:390px;aspect-ratio:4/3;background:#e5e7eb;border:1px solid #d9dde3}
+.about-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.about-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.55))}
+.about-photo span{position:absolute;left:18px;bottom:16px;z-index:2;color:#fff;font:700 10px "DM Sans";letter-spacing:2px}
+.building-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.building-card{background:#fff;border:1px solid #dfe2e7;border-radius:18px;padding:24px;min-height:330px;display:flex;flex-direction:column;gap:26px;box-shadow:0 14px 40px rgba(12,14,20,.05);transition:transform .25s ease,box-shadow .25s ease}
+.building-card:hover{transform:translateY(-5px);box-shadow:0 22px 55px rgba(12,14,20,.09)}
+.building-image{height:125px;border-radius:14px;background:#f0f2f5;border:1px solid #e2e5e9;display:flex;align-items:center;justify-content:center;padding:24px}
+.building-image img{width:100%;height:100%;object-fit:contain;display:block}
+.building-card strong{display:block;font:700 25px "Space Grotesk";letter-spacing:-.7px;color:#10131a}
+.building-card span{display:block;font-size:12px;font-weight:700;color:#66707c;margin:7px 0 12px}
+.building-card p{font-size:14px!important;line-height:1.6!important;color:#4a515b!important;margin:0;font-weight:500}
+@media(max-width:900px){.building-grid{grid-template-columns:1fr}.about-photo{max-width:none}}
