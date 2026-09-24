@@ -117,15 +117,24 @@ export default function About() {
           </div>
         </section>
 
-        <section className="section dark">
+        <section className="section dark roles-section">
           <div className="section-heading">
             <p className="eyebrow">MY ROLES</p>
             <h2>Different roles. One direction.</h2>
           </div>
-          <div className="cards three">
-            <article className="card"><span className="card-index">01</span><h3>Founder</h3><p>The Tron Forge Limited — building a technology company around digital products and software.</p></article>
-            <article className="card"><span className="card-index">02</span><h3>Creator</h3><p>The MAX AI Ecosystem — creating an AI platform and connected ecosystem of services.</p></article>
-            <article className="card"><span className="card-index">03</span><h3>Builder</h3><p>TTFL Store — developing a marketplace across web, mobile and backend systems.</p></article>
+          <div className="roles-grid">
+            <article className="role-card">
+              <div className="role-top"><span className="role-index">01</span><div className="role-logo"><img src="https://max-ai.name.ng/ttfl.png" alt="The Tron Forge Limited logo" /></div></div>
+              <div className="role-content"><span className="role-label">FOUNDER</span><h3>Founder</h3><p>The Tron Forge Limited — building a technology company around digital products and software.</p></div>
+            </article>
+            <article className="role-card">
+              <div className="role-top"><span className="role-index">02</span><div className="role-logo"><img src="https://max-ai.name.ng/favicon.png" alt="The MAX AI Ecosystem logo" /></div></div>
+              <div className="role-content"><span className="role-label">CREATOR</span><h3>Creator</h3><p>The MAX AI Ecosystem — creating an AI platform and connected ecosystem of services.</p></div>
+            </article>
+            <article className="role-card">
+              <div className="role-top"><span className="role-index">03</span><div className="role-logo"><img src="/ttfl-store.png" alt="TTFL Store logo" /></div></div>
+              <div className="role-content"><span className="role-label">BUILDER</span><h3>Builder</h3><p>TTFL Store — developing a marketplace across web, mobile and backend systems.</p></div>
+            </article>
           </div>
         </section>
 
