@@ -93,3 +93,6 @@
   .profile-copy strong{font-size:18px}
   .profile-copy span{font-size:11px}
 }
+
+
+.contact-actions{display:flex;gap:12px;flex-wrap:wrap}.whatsapp-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 22px;border-radius:999px;background:#25D366;color:#fff;font:700 15px "DM Sans";box-shadow:0 10px 25px rgba(37,211,102,.2);transition:transform .2s ease,box-shadow .2s ease,background .2s ease}.whatsapp-button:hover{background:#20bd5a;color:#fff;transform:translateY(-2px);box-shadow:0 14px 30px rgba(37,211,102,.28)}.whatsapp-icon{width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center}.whatsapp-icon svg{width:22px;height:22px;display:block}@media(max-width:500px){.contact-actions{flex-direction:column;align-items:stretch}.contact-actions .primary,.whatsapp-button{justify-content:center}}
