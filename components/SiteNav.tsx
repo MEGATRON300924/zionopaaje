@@ -12,6 +12,7 @@ function Icon({name}:{name:"menu"|"close"|"arrow"}) {
 const links=[
   ["/about","About"],
   ["/projects","Projects"],
+  ["/news","News"],
   ["\/now","Now"],
   ["\/socials","Socials"],
   ["/contact","Contact"]
