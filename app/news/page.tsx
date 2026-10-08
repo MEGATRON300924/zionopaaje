@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "News & Updates",
   description: "Official news and updates from Zion Opaaje covering technology, The Tron Forge Limited, MAX AI and new projects.",
-  alternates: { canonical: "https://zionopaaje.name.ng/news" },
+  alternates: { canonical: "https://zionopaaje.name.ng/news", types: { "application/rss+xml": "/news/feed.xml" } },
   openGraph: {
     title: "News & Updates — Zion Opaaje",
     description: "Official news and updates from Zion Opaaje.",
