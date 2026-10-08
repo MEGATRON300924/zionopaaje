@@ -1,6 +1,4 @@
 const siteUrl = "https://zionopaaje.name.ng";
-const published = "2026-10-08T00:00:00+01:00";
-
 export function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
