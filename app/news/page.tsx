@@ -15,15 +15,28 @@ export const metadata: Metadata = {
   }
 };
 
-const posts = [{
-  slug: "introducing-zion-opaaje",
-  title: "Introducing Zion Opaaje — Technology Builder, Founder & Creator",
-  date: "October 8, 2026",
-  isoDate: "2026-10-08",
-  category: "Introduction",
-  excerpt: "An introduction to Zion Opaaje, his technology work, The Tron Forge Limited, The MAX AI Ecosystem and the purpose of this official portfolio.",
-  image: "https://www.max-ai.name.ng/zionopaaje.png"
-}];
+const posts = [
+  {
+    slug: "max-ai-for-businesses",
+    title: "Introducing MAX AI for Businesses: A Connected AI Ecosystem for Hotels, Restaurants, and Modern Businesses",
+    date: "October 19, 2026",
+    isoDate: "2026-10-19",
+    category: "MAX AI · Business Technology",
+    excerpt: "An overview of the MAX AI for Businesses initiative and its planned industry-focused solutions for hotels, restaurants and connected business workflows.",
+    image: "/maxai.png",
+    imageAlt: "Official MAX AI Ecosystem logo"
+  },
+  {
+    slug: "introducing-zion-opaaje",
+    title: "Introducing Zion Opaaje — Technology Builder, Founder & Creator",
+    date: "October 8, 2026",
+    isoDate: "2026-10-08",
+    category: "Introduction",
+    excerpt: "An introduction to Zion Opaaje, his technology work, The Tron Forge Limited, The MAX AI Ecosystem and the purpose of this official portfolio.",
+    image: "https://www.max-ai.name.ng/zionopaaje.png",
+    imageAlt: "Zion Opaaje"
+  }
+];
 
 export default function NewsPage() {
   return <><SiteNav/><main className="page news-page">
@@ -36,7 +49,7 @@ export default function NewsPage() {
       <div className="news-list">
         {posts.map(post => <article className="news-card" key={post.slug}>
           <a className="news-image" href={`/news/${post.slug}`}>
-            <img src={post.image} alt="Zion Opaaje" />
+            <img src={post.image} alt={post.imageAlt} />
           </a>
           <div className="news-card-copy">
             <div className="news-meta"><span>{post.category}</span><time dateTime={post.isoDate}>{post.date}</time></div>
