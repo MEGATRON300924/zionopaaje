@@ -7,7 +7,14 @@ export function GET() {
     <link>${siteUrl}/news</link>
     <description>Official news and updates from Zion Opaaje.</description>
     <language>en-NG</language>
-    <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0100</lastBuildDate>
+    <item>
+      <title>Introducing MAX AI for Businesses: A Connected AI Ecosystem for Hotels, Restaurants, and Modern Businesses</title>
+      <link>${siteUrl}/news/max-ai-for-businesses</link>
+      <guid isPermaLink="true">${siteUrl}/news/max-ai-for-businesses</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0100</pubDate>
+      <description>An overview of the MAX AI for Businesses initiative and its planned industry-focused solutions for hotels, restaurants and connected business workflows.</description>
+    </item>
     <item>
       <title>Introducing Zion Opaaje — Technology Builder, Founder &amp; Creator</title>
       <link>${siteUrl}/news/introducing-zion-opaaje</link>
