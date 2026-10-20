@@ -41,7 +41,7 @@ export default function About() {
         </section>
 
         <section className="section split about-light-section">
-          <div><p className="eyebrow">BIOGRAPHY</p><h2>Building while learning.</h2><div className="about-photo"><img src="https://www.max-ai.name.ng/zionopaaje.png" alt="Zion Opaaje" /><span>MEGATRON · ZION OPAJE</span></div></div>
+          <div><p className="eyebrow">BIOGRAPHY</p><h2>Building while learning.</h2><div className="about-photo-gallery" aria-label="Photos of Zion Opaaje"><figure className="about-photo"><img src="/zionopaaje_2.png" alt="Zion Opaaje — portrait" /><figcaption> ZION OPAAJE · MEGATRON </figcaption></figure><figure className="about-photo"><img src="https://www.max-ai.name.ng/zionopaaje.png" alt="Zion Opaaje — alternate portrait" /><figcaption>FOUNDER · TECHNOLOGY BUILDER</figcaption></figure></div></div>
           <div className="about-copy">
             <p>I am a Nigerian technology builder who started exploring entrepreneurship and digital technology at a young age. I enjoy learning how software, online platforms and digital systems work, then turning ideas into projects that people can actually use.</p>
             <p>My work combines technology, creativity and entrepreneurship. I build software, experiment with artificial intelligence, work on online products and continue developing my technical skills through practical projects.</p>
