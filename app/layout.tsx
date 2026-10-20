@@ -3,6 +3,7 @@ import "./globals.css";
 
 const siteUrl = "https://zionopaaje.name.ng";
 const profileImage = "https://www.max-ai.name.ng/zionopaaje.png";
+const socialPreviewImage = "https://zionopaaje.name.ng/preview.png";
 const favicon = "/favicon%20(1).png";
 const siteTitle = "Zion Opaaje: Official Portfolio, Founder of The Tron Forge Limited & Creator of MAX AI";
 
@@ -20,8 +21,8 @@ export const metadata: Metadata = {
     shortcut: [favicon],
     apple: [{ url: favicon, type: "image/png" }]
   },
-  openGraph: { title: siteTitle, description: "Official website and public knowledge graph of Zion Opaaje, founder of The Tron Forge Limited and creator of The MAX AI Ecosystem.", url: siteUrl, siteName: "Zion Opaaje", locale: "en_NG", type: "website", images: [{url: profileImage, width: 1200, height: 1200, alt: "Zion Opaaje"}] },
-  twitter: { card: "summary_large_image", title: siteTitle, description: "Official website and public knowledge graph of Zion Opaaje.", images: [profileImage], creator: "@MEGATRON300924" },
+  openGraph: { title: siteTitle, description: "Official website and public knowledge graph of Zion Opaaje, founder of The Tron Forge Limited and creator of The MAX AI Ecosystem.", url: siteUrl, siteName: "Zion Opaaje", locale: "en_NG", type: "website", images: [{url: socialPreviewImage, width: 1200, height: 630, alt: "Zion Opaaje — official portfolio"}] },
+  twitter: { card: "summary_large_image", title: siteTitle, description: "Official website and public knowledge graph of Zion Opaaje.", images: [socialPreviewImage], creator: "@MEGATRON300924" },
 };
 
 const person = {
