@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const siteUrl = "https://zionopaaje.name.ng";
-const profileImage = "https://zionopaaje.name.ng/public/zionopaaje.png";
+const profileImage = "https://www.zionopaaje.name.ng/zionopaaje.png";
 const socialPreviewImage = "https://zionopaaje.name.ng/preview.png";
 const favicon = "/favicon%20(1).png";
 const siteTitle = "Zion Opaaje: Official Portfolio, Founder of The Tron Forge Limited & Creator of MAX AI";
