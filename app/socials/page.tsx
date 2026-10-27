@@ -7,6 +7,7 @@ const profiles:Profile[]=[
 {name:"TikTok",detail:"@MegaTron3000924",href:"https://www.tiktok.com/@MegaTron3000924",icon:"/icons8-tiktok-96.gif"},
 {name:"GitHub",detail:"MEGATRON300924",href:"https://github.com/MEGATRON300924"},
 {name:"X",detail:"@zionopaaje",href:"https://x.com/zionopaaje",icon:"/icons8-x-96.png"},
+{name:"Threads",detail:"@opaajezion",href:"https://www.threads.com/@opaajezion"},
 {name:"YouTube",detail:"@opaajezion",href:"https://youtube.com/@opaajezion",icon:"/icons8-youtube-96.png"},
 {name:"The Tron Forge Limited",detail:"Company website",href:"https://thetronforge.name.ng",icon:"/ttfl.jpg"},
 {name:"The MAX AI Ecosystem",detail:"Ecosystem website",href:"https://max-ai.name.ng",icon:"/maxai.png"},
