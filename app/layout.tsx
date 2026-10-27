@@ -33,7 +33,7 @@ const person = {
   "knowsAbout":["Artificial Intelligence","Software Development","Technology","Digital Products","Entrepreneurship","AI Assistants","AI Agents","Voice AI","Web Development","Backend Development","Cloud Software"],
   "mainEntityOfPage":{"@id":siteUrl+"/#webpage"},
   "worksFor":{"@id":siteUrl+"/#tron-forge"},"creator":{"@id":siteUrl+"/#max-ai"},"founder":[{"@id":siteUrl+"/#tron-forge"},{"@id":siteUrl+"/#max-ai"}],"affiliation":[{"@id":siteUrl+"/#tron-forge"}],
-  "sameAs":["https://github.com/MEGATRON300924","https://x.com/zionopaaje","https://www.instagram.com/opaajezion","https://www.tiktok.com/@MegaTron3000924","https://youtube.com/@opaajezion","https://www.threads.com/@opaajezion","https://commons.wikimedia.org/wiki/File:Zion_Opaaje%27s_Picture.jpg","https://www.wikidata.org/wiki/Q140722064"],
+  "sameAs":["https://github.com/MEGATRON300924","https://x.com/zionopaaje","https://www.instagram.com/opaajezion","https://www.tiktok.com/@MegaTron3000924","https://youtube.com/@opaajezion","https://www.threads.com/@opaajezion","https://www.snapchat.com/add/megatron300924?share_id=vaKssTsOxlc&locale=en-GB","https://commons.wikimedia.org/wiki/File:Zion_Opaaje%27s_Picture.jpg","https://www.wikidata.org/wiki/Q140722064"],
   "identifier":[{"@type":"PropertyValue","propertyID":"GitHub","value":"MEGATRON300924","url":"https://github.com/MEGATRON300924"}]
 };
 
