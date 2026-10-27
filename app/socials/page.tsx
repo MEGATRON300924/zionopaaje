@@ -8,6 +8,7 @@ const profiles:Profile[]=[
 {name:"GitHub",detail:"MEGATRON300924",href:"https://github.com/MEGATRON300924"},
 {name:"X",detail:"@zionopaaje",href:"https://x.com/zionopaaje",icon:"/icons8-x-96.png"},
 {name:"Threads",detail:"@opaajezion",href:"https://www.threads.com/@opaajezion",icon:"/threads-app-icon.png"},
+{name:"Snapchat",detail:"@megatron300924",href:"https://www.snapchat.com/add/megatron300924?share_id=vaKssTsOxlc&locale=en-GB"},
 {name:"YouTube",detail:"@opaajezion",href:"https://youtube.com/@opaajezion",icon:"/icons8-youtube-96.png"},
 {name:"The Tron Forge Limited",detail:"Company website",href:"https://thetronforge.name.ng",icon:"/ttfl.jpg"},
 {name:"The MAX AI Ecosystem",detail:"Ecosystem website",href:"https://max-ai.name.ng",icon:"/maxai.png"},
