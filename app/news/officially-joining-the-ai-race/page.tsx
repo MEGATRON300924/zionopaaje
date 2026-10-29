@@ -106,26 +106,26 @@ export default function JoiningTheAIRaceArticlePage() {
       <div className="article-body">
         <p className="article-kicker">A NEW CHAPTER</p>
         <h2>More than following the AI conversation</h2>
-        <p>Artificial intelligence is changing how people create, learn, work and interact with technology. I’ve been following that shift closely, and I’ve decided to make my place in it clearer: <strong>I’m officially joining the AI race.</strong></p>
-        <p>For me, this is not about claiming to have all the answers or pretending that building useful AI is easy. It is a commitment to keep learning, take on the difficult engineering work, improve through feedback, and turn ideas into real products that people can use.</p>
-        <p>I’m approaching this as a builder. That means experimenting, finding what works, being honest about what still needs improvement, and treating reliability, privacy and usefulness as important parts of the job — not as afterthoughts.</p>
+        <p>If you know me, you already know I love technology and building things. AI is moving fast, and I don’t want to just sit back and watch everyone else build the future. I want to be part of it too — so I’m officially joining the AI race.</p>
+        <p>I’m not saying I have everything figured out. Far from it 😅 There’s a lot to learn, plenty of things to fix, and some tough problems to solve. But that’s part of the fun. I want to keep experimenting, get better at the engineering side, listen to feedback and turn my ideas into things people can actually use.</p>
+        <p>And I’ll be real about the journey: not everything will work first time. I’ll share the progress, the lessons and the parts that still need work. That’s how you grow.</p>
 
         <div className="article-callout"><strong>What I’m aiming for 🎯</strong><span>AI that’s actually helpful in everyday life — not just a chatbot that gives answers, but something more connected, personal and useful.</span></div>
 
         <h2>Building with The MAX AI Ecosystem</h2>
-        <p>A major part of this journey is <a href="https://max-ai.name.ng">The MAX AI Ecosystem</a>, the project I’m building to explore a more connected kind of AI assistant. The long-term direction is bigger than a question-and-answer bot: it is about bringing intelligent assistance into a growing set of digital experiences.</p>
-        <p>That vision is still a work in progress. There are real challenges to solve — including dependable responses, infrastructure, integrations, user experience and making the system genuinely helpful. I want to document those challenges honestly, alongside the progress, rather than present unfinished ideas as completed products.</p>
-        <p>Through <a href="https://thetronforge.name.ng">The Tron Forge Limited</a>, I’m working to turn these ideas into technology that can keep developing over time. The ambition is serious, but the approach has to stay grounded: build, test, learn and improve.</p>
+        <p>A big part of this is <a href="https://max-ai.name.ng">The MAX AI Ecosystem</a> — something I’ve been working on because I want to build an AI assistant that can do more than just answer a question and disappear. I’m thinking about how AI can fit into different parts of everyday life and work.</p>
+        <p>MAX AI is still growing, and I’ve got plenty to improve. Reliability, speed, integrations and making the experience genuinely useful are all part of the challenge. I’m not going to pretend it’s all perfect already. I’d rather keep building, fix what doesn’t work and show the real progress.</p>
+        <p>I’m also building through <a href="https://thetronforge.name.ng">The Tron Forge Limited</a>. There’s a lot I want to do, and I know it’ll take time — one step at a time.</p>
 
         <h2>Watch the announcement</h2>
-        <p>I’m sharing the journey publicly, starting with these videos. Open the YouTube Short below to watch it directly.</p>
+        <p>I’ve started sharing this journey, and this is one of the videos. Tap the preview to watch it on YouTube.</p>
         <a className="ai-race-media-card" href={youtubeUrl} target="_blank" rel="noreferrer">
           <span className="ai-race-media-thumb"><img src={youtubeThumbnail} alt="YouTube Short thumbnail" /><span className="ai-race-play" aria-hidden="true">▶</span></span>
           <span className="ai-race-media-copy"><strong>Am Officially Joining The AI Race</strong><span>YouTube Shorts · Watch video ↗</span></span>
         </a>
 
         <h2>Also on Instagram</h2>
-        <p>The Instagram Reel is included here as a preview as well. If Instagram does not load the embedded post in your browser, use the link below to open it directly.</p>
+        <p>I’ve added the Reel here too. If the preview refuses to load (Instagram can be like that sometimes), the link underneath will take you straight to it.</p>
         <div className="instagram-preview">
           <iframe
             src={instagramEmbedUrl}
@@ -138,9 +138,9 @@ export default function JoiningTheAIRaceArticlePage() {
         <p className="ai-race-instagram-link"><a href={instagramUrl} target="_blank" rel="noreferrer">View the Instagram Reel ↗</a></p>
 
         <h2>The work starts here</h2>
-        <p>Joining the AI race is not a finish line or a claim that the journey will be easy. It is the beginning of a more deliberate chapter — one built around curiosity, consistent work, public learning and a commitment to keep improving.</p>
-        <p>I’m excited to see what can be built, and I know the best way to prove the vision is through the quality of the work itself. I’ll keep sharing meaningful milestones as MAX AI and my broader technology projects evolve.</p>
-        <p>Thank you to everyone who follows, gives feedback, tests the products or simply takes an interest in the journey. This is only the beginning.</p>
+        <p>This isn’t me saying I’ve made it — it’s me saying I’m ready to put in the work. I’m excited about what AI can become, and I want to help build something that people will actually care about and find useful.</p>
+        <p>If you’re following along, thank you ❤️ Keep an eye out for more updates as I build MAX AI and work on other ideas. And if you’ve got thoughts, feedback or just want to see what I’m working on, I’m all ears.</p>
+        <p>This is the beginning. Let’s see where it goes. 🚀</p>
         <div className="article-footer-note"><strong>Zion Opaaje</strong><span>MegaTron · Building The MAX AI Ecosystem · Founder of The Tron Forge Limited</span></div>
       </div>
     </article>
