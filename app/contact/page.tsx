@@ -32,6 +32,15 @@ export default function Contact() {
               </a>
 
               <a
+                className="primary"
+                href="https://discordapp.com/users/megatron300924"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Discord: @megatron300924 →
+              </a>
+
+              <a
                 className="whatsapp-button"
                 href="https://wa.link/hfv0mc"
                 target="_blank"
