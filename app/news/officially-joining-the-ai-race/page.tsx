@@ -11,6 +11,7 @@ const description = "I’m officially getting deeper into the AI race 🚀 Here�
 
 const youtubeUrl = "https://www.youtube.com/shorts/A60l1VsyEc4";
 const youtubeThumbnail = "https://i.ytimg.com/vi/A60l1VsyEc4/maxresdefault.jpg";
+const articleImage = "/IMPJ5JhxvzMoE.png";
 const instagramUrl = "https://www.instagram.com/reel/DfFlL7WJ-D8/?psln=cGY0MjB0ZW1od2J6";
 const instagramEmbedUrl = "https://www.instagram.com/reel/DfFlL7WJ-D8/embed";
 
@@ -41,13 +42,13 @@ export const metadata: Metadata = {
     authors: ["https://zionopaaje.name.ng/"],
     section: "Artificial Intelligence",
     tags: ["Artificial Intelligence", "MAX AI", "Zion Opaaje", "Technology"],
-    images: [{ url: youtubeThumbnail, width: 1280, height: 720, alt: "Preview thumbnail for Zion Opaaje's video about joining the AI race" }]
+    images: [{ url: `${siteUrl}${articleImage}`, alt: "Zion Opaaje — Am Officially Joining The AI Race" }]
   },
   twitter: {
     card: "summary_large_image",
     title: headline,
     description,
-    images: [youtubeThumbnail]
+    images: [`${siteUrl}${articleImage}`]
   }
 };
 
@@ -61,7 +62,7 @@ const articleSchema = {
       "mainEntityOfPage": { "@type": "WebPage", "@id": articleUrl },
       "headline": headline,
       "description": description,
-      "image": [youtubeThumbnail],
+      "image": [`${siteUrl}${articleImage}`],
       "datePublished": datePublished,
       "dateModified": datePublished,
       "author": { "@type": "Person", "@id": `${siteUrl}/#person`, "name": "Zion Opaaje", "url": siteUrl },
@@ -96,11 +97,9 @@ export default function JoiningTheAIRaceArticlePage() {
           <p className="article-deck">So yeah, it’s official — I’m going all in on building AI. 🚀 This is me sharing the journey, the ideas, the wins, the mistakes and everything I learn along the way.</p>
           <div className="article-byline"><img src="https://www.max-ai.name.ng/zionopaaje.png" alt="Zion Opaaje" /><div><strong>By Zion Opaaje</strong><span>MegaTron · October 29, 2026</span></div></div>
         </div>
-        <a className="article-cover ai-race-video-cover" href={youtubeUrl} target="_blank" rel="noreferrer" aria-label="Watch the video on YouTube">
-          <img src={youtubeThumbnail} alt="Video thumbnail for Am Officially Joining The AI Race" />
-          <span className="ai-race-play" aria-hidden="true">▶</span>
-          <span className="ai-race-cover-label">WATCH THE SHORT <span aria-hidden="true">↗</span></span>
-        </a>
+        <div className="article-cover ai-race-video-cover">
+          <img src={articleImage} alt="Zion Opaaje — Am Officially Joining The AI Race" />
+        </div>
       </header>
 
       <div className="article-body">
