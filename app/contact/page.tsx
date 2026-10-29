@@ -32,12 +32,15 @@ export default function Contact() {
               </a>
 
               <a
-                className="primary"
+                className="discord-button"
                 href="https://discordapp.com/users/megatron300924"
                 target="_blank"
                 rel="noreferrer"
               >
-                Discord: @megatron300924 →
+                <img src="/discord-icon-svgrepo-com.svg" alt="" aria-hidden="true" />
+                <span>Discord</span>
+                <span className="discord-handle">@megatron300924</span>
+                <span className="discord-arrow" aria-hidden="true">→</span>
               </a>
 
               <a
