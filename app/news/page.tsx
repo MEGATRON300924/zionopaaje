@@ -23,7 +23,7 @@ const posts = [
     isoDate: "2026-10-29",
     category: "Artificial Intelligence · Personal Milestone",
     excerpt: "Zion Opaaje shares why he is stepping further into artificial intelligence with The MAX AI Ecosystem, the vision behind the project, and the work ahead.",
-    image: "https://i.ytimg.com/vi/A60l1VsyEc4/maxresdefault.jpg",
+    image: "/IMPJ5JhxvzMoE.png",
     imageAlt: "Video thumbnail for Am Officially Joining The AI Race"
   },
   {
