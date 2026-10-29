@@ -157,3 +157,12 @@
 .about-photo-gallery .about-photo:after{background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.68))}
 @media(max-width:900px){.about-photo-gallery{max-width:none}}
 @media(max-width:480px){.about-photo-gallery{gap:9px}.about-photo-gallery .about-photo figcaption{font-size:8px;left:10px;bottom:10px}}
+
+
+/* Discord contact button */
+.discord-button{display:inline-flex;align-items:center;gap:11px;padding:14px 20px;border-radius:999px;background:#5865F2;color:#fff;font-size:14px;transition:background .2s ease,transform .2s ease,box-shadow .2s ease;box-shadow:0 7px 18px rgba(88,101,242,.18)}
+.discord-button:hover{background:#4752c4;transform:translateY(-2px);box-shadow:0 10px 24px rgba(88,101,242,.28)}
+.discord-button img{width:20px;height:20px;object-fit:contain;filter:brightness(0) invert(1)}
+.discord-handle{font-size:12px;color:rgba(255,255,255,.78)}
+.discord-arrow{margin-left:3px}
+@media(max-width:480px){.discord-button{flex-wrap:wrap;gap:8px}.discord-handle{font-size:11px}}
