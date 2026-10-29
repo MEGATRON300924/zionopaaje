@@ -9,6 +9,13 @@ export function GET() {
     <language>en-NG</language>
     <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0100</lastBuildDate>
     <item>
+      <title>Am Officially Joining The AI Race</title>
+      <link>${siteUrl}/news/officially-joining-the-ai-race</link>
+      <guid isPermaLink="true">${siteUrl}/news/officially-joining-the-ai-race</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0100</pubDate>
+      <description>Zion Opaaje shares why he is stepping further into artificial intelligence with The MAX AI Ecosystem, the vision behind the project, and the work ahead.</description>
+    </item>
+    <item>
       <title>Introducing MAX AI for Businesses: A Connected AI Ecosystem for Hotels, Restaurants, and Modern Businesses</title>
       <link>${siteUrl}/news/max-ai-for-businesses</link>
       <guid isPermaLink="true">${siteUrl}/news/max-ai-for-businesses</guid>
