@@ -7,7 +7,7 @@ const siteUrl = "https://zionopaaje.name.ng";
 const articleUrl = `${siteUrl}/news/officially-joining-the-ai-race`;
 const datePublished = "2026-10-29";
 const headline = "Am Officially Joining The AI Race";
-const description = "Zion Opaaje shares why he is stepping further into artificial intelligence with The MAX AI Ecosystem, the vision behind the project, and the work ahead.";
+const description = "I’m officially getting deeper into the AI race 🚀 Here’s why I’m building MAX AI, what I’m learning, and what I want to create next.";
 
 const youtubeUrl = "https://www.youtube.com/shorts/A60l1VsyEc4";
 const youtubeThumbnail = "https://i.ytimg.com/vi/A60l1VsyEc4/maxresdefault.jpg";
@@ -93,7 +93,7 @@ export default function JoiningTheAIRaceArticlePage() {
         <div className="article-hero-copy">
           <div className="news-meta"><span>Artificial Intelligence · Personal Milestone</span><time dateTime={datePublished}>October 29, 2026</time></div>
           <h1>{headline}</h1>
-          <p className="article-deck">I’m stepping more deliberately into one of the most important technology shifts of our time — not just to talk about AI, but to build, learn, test ideas and contribute something useful.</p>
+          <p className="article-deck">So yeah, it’s official — I’m going all in on building AI. 🚀 This is me sharing the journey, the ideas, the wins, the mistakes and everything I learn along the way.</p>
           <div className="article-byline"><img src="https://www.max-ai.name.ng/zionopaaje.png" alt="Zion Opaaje" /><div><strong>By Zion Opaaje</strong><span>MegaTron · October 29, 2026</span></div></div>
         </div>
         <a className="article-cover ai-race-video-cover" href={youtubeUrl} target="_blank" rel="noreferrer" aria-label="Watch the video on YouTube">
@@ -110,7 +110,7 @@ export default function JoiningTheAIRaceArticlePage() {
         <p>For me, this is not about claiming to have all the answers or pretending that building useful AI is easy. It is a commitment to keep learning, take on the difficult engineering work, improve through feedback, and turn ideas into real products that people can use.</p>
         <p>I’m approaching this as a builder. That means experimenting, finding what works, being honest about what still needs improvement, and treating reliability, privacy and usefulness as important parts of the job — not as afterthoughts.</p>
 
-        <div className="article-callout"><strong>The goal</strong><span>Build AI experiences that are useful beyond a single chat window — connected, personal, practical and designed around real needs.</span></div>
+        <div className="article-callout"><strong>What I’m aiming for 🎯</strong><span>AI that’s actually helpful in everyday life — not just a chatbot that gives answers, but something more connected, personal and useful.</span></div>
 
         <h2>Building with The MAX AI Ecosystem</h2>
         <p>A major part of this journey is <a href="https://max-ai.name.ng">The MAX AI Ecosystem</a>, the project I’m building to explore a more connected kind of AI assistant. The long-term direction is bigger than a question-and-answer bot: it is about bringing intelligent assistance into a growing set of digital experiences.</p>
@@ -141,7 +141,7 @@ export default function JoiningTheAIRaceArticlePage() {
         <p>Joining the AI race is not a finish line or a claim that the journey will be easy. It is the beginning of a more deliberate chapter — one built around curiosity, consistent work, public learning and a commitment to keep improving.</p>
         <p>I’m excited to see what can be built, and I know the best way to prove the vision is through the quality of the work itself. I’ll keep sharing meaningful milestones as MAX AI and my broader technology projects evolve.</p>
         <p>Thank you to everyone who follows, gives feedback, tests the products or simply takes an interest in the journey. This is only the beginning.</p>
-        <div className="article-footer-note"><strong>Zion Opaaje</strong><span>MegaTron · Founder of The Tron Forge Limited · Building The MAX AI Ecosystem</span></div>
+        <div className="article-footer-note"><strong>Zion Opaaje</strong><span>MegaTron · Building The MAX AI Ecosystem · Founder of The Tron Forge Limited</span></div>
       </div>
     </article>
     <Script src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
