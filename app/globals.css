@@ -166,3 +166,26 @@
 .discord-handle{font-size:12px;color:rgba(255,255,255,.78)}
 .discord-arrow{margin-left:3px}
 @media(max-width:480px){.discord-button{flex-wrap:wrap;gap:8px}.discord-handle{font-size:11px}}
+
+
+/* AI race article: media preview cards */
+.ai-race-video-cover{position:relative;display:block;overflow:hidden;background:#10131a}
+.ai-race-video-cover>img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s ease}
+.ai-race-video-cover:hover>img{transform:scale(1.035)}
+.ai-race-video-cover:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.48));pointer-events:none}
+.ai-race-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:66px;height:66px;border-radius:50%;display:flex;align-items:center;justify-content:center;padding-left:4px;background:rgba(255,255,255,.94);color:#111;font-size:22px;box-shadow:0 8px 30px rgba(0,0,0,.22);z-index:2}
+.ai-race-cover-label{position:absolute;left:22px;right:22px;bottom:20px;display:flex;justify-content:space-between;color:#fff;font-size:10px;font-weight:700;letter-spacing:1.8px;z-index:2}
+.ai-race-media-card{display:grid;grid-template-columns:minmax(150px,.8fr) 1.2fr;align-items:center;gap:22px;margin:30px 0;padding:14px;border:1px solid var(--line);border-radius:16px;background:#fff;transition:transform .2s ease,box-shadow .2s ease}
+.ai-race-media-card:hover{transform:translateY(-3px);box-shadow:0 15px 38px rgba(0,0,0,.08)}
+.ai-race-media-thumb{position:relative;display:block;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#10131a}
+.ai-race-media-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.ai-race-media-thumb .ai-race-play{width:48px;height:48px;font-size:17px}
+.ai-race-media-copy{display:flex;flex-direction:column;gap:9px}
+.ai-race-media-copy strong{font:600 21px "Space Grotesk";line-height:1.2;color:#11151b}
+.ai-race-media-copy>span{font-size:12px;color:var(--muted)}
+.instagram-preview{width:100%;max-width:540px;margin:28px auto 12px;min-height:440px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.instagram-preview iframe{display:block;width:100%;height:620px;border:0}
+.ai-race-instagram-link{text-align:center}
+.ai-race-instagram-link a{display:inline-flex;font-size:14px;font-weight:700;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:12px 18px}
+@media(max-width:900px){.ai-race-media-card{grid-template-columns:1fr;gap:14px}.ai-race-media-copy{padding:6px}.instagram-preview{min-height:400px}.instagram-preview iframe{height:600px}}
+@media(prefers-reduced-motion:reduce){.ai-race-video-cover>img,.ai-race-media-card{transition:none}}
