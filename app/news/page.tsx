@@ -17,6 +17,16 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "officially-joining-the-ai-race",
+    title: "Am Officially Joining The AI Race",
+    date: "October 29, 2026",
+    isoDate: "2026-10-29",
+    category: "Artificial Intelligence · Personal Milestone",
+    excerpt: "Zion Opaaje shares why he is stepping further into artificial intelligence with The MAX AI Ecosystem, the vision behind the project, and the work ahead.",
+    image: "https://i.ytimg.com/vi/A60l1VsyEc4/maxresdefault.jpg",
+    imageAlt: "Video thumbnail for Am Officially Joining The AI Race"
+  },
+  {
     slug: "max-ai-for-businesses",
     title: "Introducing MAX AI for Businesses: A Connected AI Ecosystem for Hotels, Restaurants, and Modern Businesses",
     date: "October 19, 2026",
