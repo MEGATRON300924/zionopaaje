@@ -12,9 +12,10 @@ function Icon({name}:{name:"menu"|"close"|"arrow"}) {
 const links=[
   ["/about","About"],
   ["/projects","Projects"],
+  ["/gallery","Gallery"],
   ["/news","News"],
-  ["\/now","Now"],
-  ["\/socials","Socials"],
+  ["/now","Now"],
+  ["/socials","Socials"],
   ["/contact","Contact"]
 ];
 
