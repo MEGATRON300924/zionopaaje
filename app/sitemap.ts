@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: base, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${base}/about`, lastModified: now, changeFrequency: "monthly", priority: .8 },
     { url: `${base}/projects`, lastModified: now, changeFrequency: "monthly", priority: .8 },
+    { url: `${base}/gallery`, lastModified: now, changeFrequency: "monthly", priority: .7 },
     { url: `${base}/news`, lastModified: now, changeFrequency: "weekly", priority: .9 },
     { url: `${base}/news/officially-joining-the-ai-race`, lastModified: new Date("2026-10-29"), changeFrequency: "monthly", priority: .9 },
     { url: `${base}/news/max-ai-for-businesses`, lastModified: new Date("2026-10-19"), changeFrequency: "monthly", priority: .9 },
