@@ -227,3 +227,8 @@
 .gallery-lightbox-count{position:absolute;bottom:24px;color:#fff;font-size:11px;letter-spacing:2px}
 @media(max-width:900px){.gallery-feature{grid-template-columns:1fr}.gallery-feature-image,.gallery-feature-image img{min-height:380px;max-height:560px}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-tile{min-height:300px}.gallery-section-heading{align-items:flex-start;flex-direction:column;gap:5px}}
 @media(max-width:560px){.gallery-hero h1{letter-spacing:-3px}.gallery-section{padding-top:35px}.gallery-grid{grid-template-columns:1fr}.gallery-tile{aspect-ratio:5/4;min-height:300px}.gallery-feature-image,.gallery-feature-image img{min-height:300px}.gallery-feature-copy{padding:28px 22px}.gallery-lightbox{padding:70px 15px}.gallery-lightbox button{width:40px;height:40px}.gallery-prev{left:8px}.gallery-next{right:8px}}
+
+.gallery-tile-caption{padding-right:25px}
+.gallery-tile-description{font:400 12px/1.5 "DM Sans",sans-serif;color:rgba(255,255,255,.82);max-width:95%;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.gallery-tile-caption i{top:2px;bottom:auto}
+@media(max-width:560px){.gallery-tile-description{font-size:12px}}
