@@ -23,10 +23,17 @@ type GitHubEvent = {
 };
 
 function readXmlTag(source: string, tag: string) {
-  const match = source.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, "i"));
-  if (!match) return "";
-  return match[1]
-    .replace(/^<!\\[CDATA\\[|\\]\\]>$/g, "")
+  const openingTag = `<${tag}`;
+  const openingIndex = source.indexOf(openingTag);
+  if (openingIndex < 0) return "";
+  const contentStart = source.indexOf(">", openingIndex) + 1;
+  const contentEnd = source.indexOf(`</${tag}>`, contentStart);
+  if (contentStart === 0 || contentEnd < 0) return "";
+  let value = source.slice(contentStart, contentEnd).trim();
+  if (value.startsWith("<![CDATA[") && value.endsWith("]]>")) {
+    value = value.slice(9, -3);
+  }
+  return value
     .replace(/&amp;/g, "&")
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
@@ -43,8 +50,8 @@ async function getYouTubeUploads(): Promise<UploadItem[]> {
     if (!channelResponse.ok) return [];
     const channelHtml = await channelResponse.text();
     const channelId =
-      channelHtml.match(/"channelId"\\s*:\\s*"(UC[\\w-]+)"/)?.[1] ??
-      channelHtml.match(/itemprop="channelId" content="(UC[\\w-]+)"/)?.[1];
+      channelHtml.match(/"channelId"\s*:\s*"(UC[\w-]+)"/)?.[1] ??
+      channelHtml.match(/itemprop="channelId" content="(UC[\w-]+)"/)?.[1];
     if (!channelId) return [];
 
     const feedResponse = await fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`, {
@@ -52,8 +59,8 @@ async function getYouTubeUploads(): Promise<UploadItem[]> {
     });
     if (!feedResponse.ok) return [];
     const xml = await feedResponse.text();
-    return [...xml.matchAll(/<entry>([\\s\\S]*?)<\\/entry>/g)].slice(0, 4).map((match) => {
-      const entry = match[1];
+    return xml.split("<entry>").slice(1).map((entryBlock) => {
+      const entry = entryBlock.split("</entry>")[0];
       const videoId = readXmlTag(entry, "yt:videoId");
       const title = readXmlTag(entry, "title");
       const published = readXmlTag(entry, "published");
@@ -66,7 +73,7 @@ async function getYouTubeUploads(): Promise<UploadItem[]> {
         href: `https://www.youtube.com/watch?v=${videoId}`,
         thumbnail: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`
       };
-    }).filter((item): item is UploadItem => item !== null);
+    }).filter((item): item is UploadItem => item !== null).slice(0, 4);
   } catch {
     return [];
   }
@@ -87,7 +94,7 @@ async function getGitHubActivity(): Promise<UploadItem[]> {
       let detail = "";
       if (event.type === "PushEvent") {
         title = `Updated ${repo.split("/").pop()}`;
-        detail = event.payload?.commits?.[0]?.message?.split("\\n")[0] || "Pushed code updates";
+        detail = event.payload?.commits?.[0]?.message?.split("\n")[0] || "Pushed code updates";
       } else if (event.type === "ReleaseEvent") {
         title = `Released ${repo.split("/").pop()}`;
         detail = event.payload?.release?.name || event.payload?.release?.tag_name || "Published a release";
