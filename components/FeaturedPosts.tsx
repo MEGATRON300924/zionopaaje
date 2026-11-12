@@ -66,7 +66,7 @@ function YouTubePreview({ post, index }: { post: typeof youtubePosts[number]; in
       </div>
       <div className="featured-post-meta">
         <span className="featured-platform-label youtube-label"><span aria-hidden="true">▶</span> {post.format}</span>
-        <a href={post.url} target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
+        <a className="featured-platform-link" href={post.url} target="_blank" rel="noopener noreferrer"><svg className="featured-platform-icon youtube-platform-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8Z"/><path fill="#fff" d="m9.6 15.5 6.2-3.5-6.2-3.5v7Z"/></svg><span>Watch on YouTube</span></a>
       </div>
     </article>
   );
@@ -135,7 +135,7 @@ export default function FeaturedPosts() {
             data-snapchat-embed-style="border-radius: 24px;"
             data-snapchat-embed-title="megatron300924"
           />
-          <a className="featured-embed-fallback" href="https://www.snapchat.com/@megatron300924/highlight/a21226de-016b-5dae-a150-b9c536a29fa5" target="_blank" rel="noopener noreferrer">View more on Snapchat ↗</a>
+          <a className="featured-embed-fallback" href="https://www.snapchat.com/@megatron300924/highlight/a21226de-016b-5dae-a150-b9c536a29fa5" target="_blank" rel="noopener noreferrer"><svg className="featured-platform-icon snapchat-platform-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="6" fill="#FFFC00"/><path d="M12 4.2c-2.5 0-4.1 1.8-4.1 4.5 0 .8.1 1.6.1 2.2-.4.3-1 .5-1.6.5-.4 0-.7.2-.7.6 0 .5.8.8 1.4 1 .4.1.7.3.8.6.2.7-.8 1.7-2.2 2.2-.4.1-.5.5-.2.8.3.3 1 .3 1.4.3.5 0 .8.2 1 .7.1.3.4.5.8.4.8-.2 1.4-.3 2-.3.5 0 .9.2 1.3.6.4-.4.8-.6 1.3-.6.6 0 1.2.1 2 .3.4.1.7-.1.8-.4.2-.5.5-.7 1-.7.4 0 1.1 0 1.4-.3.3-.3.2-.7-.2-.8-1.4-.5-2.4-1.5-2.2-2.2.1-.3.4-.5.8-.6.6-.2 1.4-.5 1.4-1 0-.4-.3-.6-.7-.6-.6 0-1.2-.2-1.6-.5 0-.6.1-1.4.1-2.2 0-2.7-1.6-4.5-4.1-4.5Z" fill="#fff" stroke="#111" strokeWidth=".8" strokeLinejoin="round"/></svg><span>View more on Snapchat</span></a>
         </article>
       </div>
     </section>
