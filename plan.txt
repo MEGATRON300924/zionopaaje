@@ -101,3 +101,13 @@
 ### Status
 - Plan recorded; implementation in progress.
 - Build and deployment not yet verified.
+
+### Implementation progress
+- Added `components/FeaturedPosts.tsx` with two supplied YouTube embeds, two official Instagram embeds, and the supplied Snapchat story highlight embed.
+- YouTube preview iframes are configured to autoplay muted, with an in-card Unmute/Mute control using the YouTube IFrame Player messaging API.
+- Removed the previous GitHub activity feed and the dynamic YouTube RSS lookup from `app/page.tsx`; the homepage now renders the curated Featured Posts component directly after the existing four navigation cards.
+- Replaced the old Latest Uploads styling with responsive Featured Posts styling, staggered entrance animation, hover lift/shadow transitions, and reduced-motion support.
+- Files changed: `app/page.tsx`, `components/FeaturedPosts.tsx`, `app/home-branding.css`.
+- Commits: plan `5760c070b4cfc4894f7809db4f806a1584d38373`; component `bee793c9a32a97eacc17cdc98cf0ec7886e7cbed`; homepage replacement `be7525435a8c179e8749b9cd3cf81df492bf4f1e`; styles `1f9e2814213c759797d656d60ff2ee23a1c7573c`; typography correction `b09ed8709a943a8b71b589112cb6c85fca99bedb`.
+- Source review confirms Featured Posts is mounted below the existing four cards, and Instagram/Snapchat official embed scripts are loaded client-side. GitHub is no longer part of the homepage feed.
+- Build/deployment status: pending Vercel verification. Third-party embeds and browser autoplay/sound behavior still require live browser testing; embed providers may apply their own availability or consent restrictions.
