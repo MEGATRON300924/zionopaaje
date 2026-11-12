@@ -1,0 +1,25 @@
+# Zion Opaaje Portfolio — Implementation Plan
+
+## Current task: Homepage Linktree and identity refinements
+
+### Requested
+- Add a Linktree button beside “Explore my work” and “About me”, using the supplied Linktree profile URL and official green branding.
+- Use the existing `public/lintr.png` icon for the button.
+- Use `public/tab_icon.jpg` as the browser favicon / tab icon and SEO icon.
+- Add existing brand logos to the three homepage identity labels: The Tron Forge Limited, The MAX AI Ecosystem, and TTFL Store.
+- Add a small `tab_icon.jpg` image immediately before the hero eyebrow text “ZION OPAJE · MEGATRON · TECHNOLOGY BUILDER”.
+
+### Implementation
+- Status: In progress.
+- Target repository: `MEGATRON300924/zionopaaje`
+- Target branch: `main`
+- Files to update: `app/page.tsx`, `app/layout.tsx`, new `app/home-branding.css`.
+- Existing assets confirmed in `public/`: `lintr.png`, `tab_icon.jpg`, `ttfl.jpg`, `maxai.png`, `ttfl-store.png`.
+- Tests: pending after implementation.
+- Deployment: pending after commit/build verification.
+
+### Next steps
+1. Implement homepage links, logo-backed identity labels, and small hero mark.
+2. Update favicon metadata to `/tab_icon.jpg`.
+3. Add focused responsive styles and accessible image alt text.
+4. Verify changed files and CI/deployment status; record commit and any failures here.
