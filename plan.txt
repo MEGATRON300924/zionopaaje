@@ -81,3 +81,23 @@
 
 - Verification result: Vercel production deployment for code commit `c344ffa1f0548e249c269ff22688eae0ce771767` reached `READY`; its aliases include `https://zionopaaje.name.ng` and `https://www.zionopaaje.name.ng`. Next.js compilation and TypeScript checks passed for this code commit.
 - Browser-level visual verification was not available in this session. The deployment is confirmed READY by Vercel; verify the rendered feed on the live homepage after cache refresh.
+
+
+## Current task: Replace Latest Uploads with Featured Posts
+
+### Requested changes
+- Remove GitHub activity completely from the homepage social section.
+- Rename the section to **Featured Posts** (user's final requested title; earlier wording "Featured Socials" superseded).
+- Feature these user-supplied posts:
+  - YouTube video: https://youtu.be/83I40Fmb5h8?si=EdDD7-awRIGzkRFB
+  - YouTube Short: https://www.youtube.com/shorts/sg52Bm2h9LA
+  - Instagram post: https://www.instagram.com/p/DbbXZezJ7dn/
+  - Instagram Reel: https://www.instagram.com/reel/DfFlL7WJ-D8/
+  - Snapchat highlight: https://www.snapchat.com/@megatron300924/highlight/a21226de-016b-5dae-a150-b9c536a29fa5/embed
+- Add video previews that autoplay muted and provide a clear sound toggle.
+- Use the official Instagram and Snapchat embed scripts/markup where supported; provide original-post links as fallbacks.
+- Add more polished entrance, hover and interaction animations while respecting reduced-motion preferences.
+
+### Status
+- Plan recorded; implementation in progress.
+- Build and deployment not yet verified.
