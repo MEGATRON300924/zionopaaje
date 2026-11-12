@@ -111,3 +111,6 @@
 - Commits: plan `5760c070b4cfc4894f7809db4f806a1584d38373`; component `bee793c9a32a97eacc17cdc98cf0ec7886e7cbed`; homepage replacement `be7525435a8c179e8749b9cd3cf81df492bf4f1e`; styles `1f9e2814213c759797d656d60ff2ee23a1c7573c`; typography correction `b09ed8709a943a8b71b589112cb6c85fca99bedb`.
 - Source review confirms Featured Posts is mounted below the existing four cards, and Instagram/Snapchat official embed scripts are loaded client-side. GitHub is no longer part of the homepage feed.
 - Build/deployment status: pending Vercel verification. Third-party embeds and browser autoplay/sound behavior still require live browser testing; embed providers may apply their own availability or consent restrictions.
+
+- Verification: Vercel production deployment for code commit `b09ed8709a943a8b71b589112cb6c85fca99bedb` reached `READY`; aliases include `https://zionopaaje.name.ng` and `https://www.zionopaaje.name.ng`.
+- The deployment confirms Next.js build and TypeScript compilation succeeded. Third-party Instagram/Snapchat embed rendering and YouTube autoplay/unmute behavior still depend on the platforms and browser policy; these require visual/browser testing after deployment.
