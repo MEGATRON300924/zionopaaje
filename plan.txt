@@ -114,3 +114,21 @@
 
 - Verification: Vercel production deployment for code commit `b09ed8709a943a8b71b589112cb6c85fca99bedb` reached `READY`; aliases include `https://zionopaaje.name.ng` and `https://www.zionopaaje.name.ng`.
 - The deployment confirms Next.js build and TypeScript compilation succeeded. Third-party Instagram/Snapchat embed rendering and YouTube autoplay/unmute behavior still depend on the platforms and browser policy; these require visual/browser testing after deployment.
+
+
+## Current task: Replace external-link arrows with platform icons
+
+### Requested
+- In Featured Posts, replace the arrow beside the YouTube viewing link with the YouTube platform logo.
+- Replace the arrow beside the Snapchat viewing link with the Snapchat platform logo.
+- Keep link labels, destinations, and existing card layout intact.
+
+### Implementation
+- Status: In progress.
+- Target: `components/FeaturedPosts.tsx` on `main`.
+- Use accessible inline SVG platform marks (YouTube play-button mark and Snapchat ghost mark), not a generic arrow glyph.
+- Preserve text labels and add appropriate decorative-icon accessibility attributes.
+- Verify source and production deployment after commit.
+
+### Verification
+- Pending implementation and Vercel deployment check.
