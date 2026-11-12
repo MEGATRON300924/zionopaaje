@@ -32,3 +32,31 @@
 - CSS import and MIME correction: `7220ef16f420a55f39ac3ae1bb817c9f8582ec3a`
 - New responsive branding styles: `abbd8eb3d60f362b554272d69bd79c4b8fc9fb95`
 - Verification: Homepage JSX updated with Linktree URL, existing image paths confirmed via GitHub contents API, metadata points to `/tab_icon.jpg` with JPEG MIME types, and dedicated responsive styles added. Vercel deployment accepted; state last observed as `QUEUED`. Full build check not yet completed.
+
+
+## Current task: Homepage Latest Uploads feed
+
+### Requested
+- Add a Latest Uploads section immediately after the existing four homepage navigation cards; do not add more navigation cards.
+- Use the official social accounts already listed in `app/socials/page.tsx` as the source of platform links.
+- Aggregate verifiable recent public content and link each item to its original platform.
+
+### Social platforms found in /socials
+- Instagram: @opaajezion
+- TikTok: @MegaTron3000924
+- GitHub: MEGATRON300924
+- X: @zionopaaje
+- Threads: @opaajezion
+- Snapchat: @megatron300924
+- YouTube: @opaajezion
+- Company websites are listed separately and are not personal upload feeds.
+
+### Implementation approach
+- Add a server-rendered, cached homepage feed using YouTube's public channel feed (resolve the channel ID from the public handle page at runtime) and GitHub's public activity API.
+- Sort available items newest-first and show thumbnails where available.
+- Link Instagram, TikTok, X, Threads and Snapchat from the section as official profiles, but do not fabricate recent posts where public feed access is restricted or requires authenticated API access.
+- Keep the existing four navigation cards unchanged and place the feed immediately below them.
+
+### Status
+- Planning recorded; implementation pending.
+- Build and production deployment not yet verified.
