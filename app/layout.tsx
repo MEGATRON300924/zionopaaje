@@ -4,7 +4,7 @@ import "./globals.css";
 const siteUrl = "https://zionopaaje.name.ng";
 const profileImage = "https://www.zionopaaje.name.ng/zionopaaje.png";
 const socialPreviewImage = "https://zionopaaje.name.ng/preview.png";
-const favicon = "/favicon%20(1).png";
+const favicon = "/tab_icon.jpg";
 const siteTitle = "Zion Opaaje: Official Portfolio, Founder of The Tron Forge Limited & Creator of MAX AI";
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: siteUrl },
   icons: {
     icon: [
-      { url: favicon, type: "image/png" },
+      { url: favicon, type: "image/jpeg" },
       { url: favicon, sizes: "32x32", type: "image/png" },
       { url: favicon, sizes: "192x192", type: "image/png" }
     ],
