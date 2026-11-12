@@ -132,3 +132,12 @@
 
 ### Verification
 - Pending implementation and Vercel deployment check.
+
+### Implementation progress
+- Replaced the arrow glyph in the YouTube viewing link with an inline YouTube SVG play-button logo.
+- Replaced the arrow glyph in the Snapchat viewing link with an inline Snapchat ghost logo on its yellow brand tile.
+- Preserved the existing link text, destinations, and card layout; SVGs are decorative and hidden from assistive technology.
+- Added compact alignment styles for both platform marks.
+- Component commit: `c27224c85c23e280c5a365722a42ea27aaf01a18`.
+- Styles commit: `fa7b09a7d2fae8e90d7336b693cd7e699ace33aa`.
+- Vercel build/deployment verification: pending.
