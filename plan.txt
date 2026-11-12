@@ -75,3 +75,6 @@
 1. Confirm the latest Vercel deployment builds successfully.
 2. Confirm the live homepage renders feed items when the public YouTube and GitHub endpoints respond.
 3. If YouTube blocks channel-page resolution in the Vercel runtime, replace the runtime lookup with a verified channel ID and retain the public RSS feed.
+
+- TypeScript build correction: the first valid syntax pass exposed an inferred nullable-array type issue in the YouTube parser; replaced it with a typed accumulation loop in commit `c344ffa1f0548e249c269ff22688eae0ce771767`.
+- Previous Vercel attempts failed first on malformed parser regex and then on the TypeScript narrowing issue; both source issues have been corrected. Latest deployment for commit `c344ffa1f0548e249c269ff22688eae0ce771767` is currently BUILDING. Do not treat the feature as production-ready until it reaches READY and the live page is checked.
