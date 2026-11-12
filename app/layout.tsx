@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./home-branding.css";
 
 const siteUrl = "https://zionopaaje.name.ng";
 const profileImage = "https://www.zionopaaje.name.ng/zionopaaje.png";
@@ -15,11 +16,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: favicon, type: "image/jpeg" },
-      { url: favicon, sizes: "32x32", type: "image/png" },
-      { url: favicon, sizes: "192x192", type: "image/png" }
+      { url: favicon, sizes: "32x32", type: "image/jpeg" },
+      { url: favicon, sizes: "192x192", type: "image/jpeg" }
     ],
     shortcut: [favicon],
-    apple: [{ url: favicon, type: "image/png" }]
+    apple: [{ url: favicon, type: "image/jpeg" }]
   },
   openGraph: { title: siteTitle, description: "Official website and public knowledge graph of Zion Opaaje, founder of The Tron Forge Limited and creator of The MAX AI Ecosystem.", url: siteUrl, siteName: "Zion Opaaje", locale: "en_NG", type: "website", images: [{url: socialPreviewImage, width: 1200, height: 630, alt: "Zion Opaaje — official portfolio"}] },
   twitter: { card: "summary_large_image", title: siteTitle, description: "Official website and public knowledge graph of Zion Opaaje.", images: [socialPreviewImage], creator: "@MEGATRON300924" },
