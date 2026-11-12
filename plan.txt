@@ -16,7 +16,8 @@
 - Files to update: `app/page.tsx`, `app/layout.tsx`, new `app/home-branding.css`.
 - Existing assets confirmed in `public/`: `lintr.png`, `tab_icon.jpg`, `ttfl.jpg`, `maxai.png`, `ttfl-store.png`.
 - Tests: Source-level verification completed; Next.js build / deployment verification still pending.
-- Deployment: pending; no production success claimed.
+- Deployment: production deployment created and currently QUEUED; build has not started/finished, so production success is not yet verified.
+- Vercel deployment: `dpl_EWNn9aUti2CjdxxcVTGszUeU7Hqb` (https://zionopaaje-555d1jygm-megatron300924s-projects.vercel.app).
 
 ### Next steps
 1. Implement homepage links, logo-backed identity labels, and small hero mark.
@@ -30,4 +31,4 @@
 - Favicon metadata: `4db22f9acd622611ab92a7c5c4cec3fcee20d843`
 - CSS import and MIME correction: `7220ef16f420a55f39ac3ae1bb817c9f8582ec3a`
 - New responsive branding styles: `abbd8eb3d60f362b554272d69bd79c4b8fc9fb95`
-- Verification: Homepage JSX updated with Linktree URL, existing image paths confirmed via GitHub contents API, metadata points to `/tab_icon.jpg`, and dedicated styles added. Full build check not yet run.
+- Verification: Homepage JSX updated with Linktree URL, existing image paths confirmed via GitHub contents API, metadata points to `/tab_icon.jpg` with JPEG MIME types, and dedicated responsive styles added. Vercel deployment accepted; state last observed as `QUEUED`. Full build check not yet completed.
