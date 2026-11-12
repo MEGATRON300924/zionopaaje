@@ -58,5 +58,20 @@
 - Keep the existing four navigation cards unchanged and place the feed immediately below them.
 
 ### Status
-- Planning recorded; implementation pending.
-- Build and production deployment not yet verified.
+- Status: Implemented and committed to `main`.
+- `app/page.tsx`: added server-rendered YouTube upload and GitHub public activity aggregation, newest-first sorting, original-source links, dates, thumbnails, and profile links for Instagram, TikTok, X, Threads and Snapchat.
+- `app/home-branding.css`: added responsive editorial feed styling for desktop and mobile.
+- Existing About / Projects / Socials / Contact cards were preserved; Latest Uploads is placed immediately after them.
+- Public API limitations: Instagram, TikTok, X, Threads and Snapchat are linked but are not represented as live upload cards because their latest-post APIs are restricted or require authenticated access.
+- Build and production deployment: pending verification.
+
+### Commits
+- Plan: `060ed43a12649cb968eb52d82b3a4711b066988e`
+- Homepage feed implementation: `400fde31cf1708f223619f405b2c995dd20044d9`
+- Responsive feed styling: `b01b59484e4b5c6c094b2f961554bf5129bd1888`
+- Parsing correction: `93deec732dc036dea43c5a15917bf958f1c0bf50`
+
+### Verification / next steps
+1. Confirm the latest Vercel deployment builds successfully.
+2. Confirm the live homepage renders feed items when the public YouTube and GitHub endpoints respond.
+3. If YouTube blocks channel-page resolution in the Vercel runtime, replace the runtime lookup with a verified channel ID and retain the public RSS feed.
