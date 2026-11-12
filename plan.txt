@@ -141,3 +141,10 @@
 - Component commit: `c27224c85c23e280c5a365722a42ea27aaf01a18`.
 - Styles commit: `fa7b09a7d2fae8e90d7336b693cd7e699ace33aa`.
 - Vercel build/deployment verification: pending.
+
+### Final status
+- Final source commit (explicit SVG dimensions): `486b6051c88188f1f9502d25a7e3ec70c64c5758`.
+- The icon implementation is committed on `main`; YouTube uses its red play-button SVG and Snapchat uses its yellow-tile ghost SVG. Link labels and destinations are unchanged.
+- The latest Vercel deployment observed for the icon component commit `c27224c85c23e280c5a365722a42ea27aaf01a18` reached `READY` (`dpl_37mR6zjtJMLrUm8rWroWqYMGpAiu`).
+- A deployment for the final styling/dimension commits could not be started: Vercel returned HTTP 402 `api-deployments-free-per-day` (more than 100 deployments; retry after 24 hours). Therefore the final latest commit is committed but not yet verified as deployed.
+- Next step: once the Vercel deployment quota resets, deploy latest `main` and verify the production homepage.
