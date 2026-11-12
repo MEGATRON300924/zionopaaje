@@ -59,21 +59,24 @@ async function getYouTubeUploads(): Promise<UploadItem[]> {
     });
     if (!feedResponse.ok) return [];
     const xml = await feedResponse.text();
-    return xml.split("<entry>").slice(1).map((entryBlock) => {
+    const uploads: UploadItem[] = [];
+    for (const entryBlock of xml.split("<entry>").slice(1)) {
       const entry = entryBlock.split("</entry>")[0];
       const videoId = readXmlTag(entry, "yt:videoId");
       const title = readXmlTag(entry, "title");
       const published = readXmlTag(entry, "published");
-      if (!videoId || !title) return null;
-      return {
-        platform: "YouTube" as const,
+      if (!videoId || !title) continue;
+      uploads.push({
+        platform: "YouTube",
         title,
         detail: "New video from @opaajezion",
         date: published,
         href: `https://www.youtube.com/watch?v=${videoId}`,
         thumbnail: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`
-      };
-    }).filter((item): item is UploadItem => item !== null).slice(0, 4);
+      });
+      if (uploads.length === 4) break;
+    }
+    return uploads;
   } catch {
     return [];
   }
