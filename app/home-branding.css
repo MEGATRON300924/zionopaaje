@@ -46,3 +46,10 @@
 @media(max-width:980px){.featured-embed-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.featured-snapchat-card{grid-column:1/-1;max-width:520px;width:100%;justify-self:center}}
 @media(max-width:700px){.featured-posts{padding-top:82px;padding-bottom:86px}.featured-posts-heading{align-items:flex-start;flex-direction:column;gap:18px}.featured-youtube-grid{grid-template-columns:1fr;gap:14px}.featured-youtube-vertical .featured-video-frame{max-height:620px}.featured-embed-grid{grid-template-columns:1fr;gap:14px}.featured-snapchat-card{grid-column:auto}.featured-embed-card{padding:12px}.featured-instagram-card blockquote{min-height:250px}}
 @media(prefers-reduced-motion:reduce){.featured-post-card{animation:none!important;transition:none!important}.featured-post-card:hover{transform:none}.featured-all-link,.featured-sound-toggle{transition:none}}
+
+/* Platform marks on Featured Posts source links */
+.featured-platform-link{display:inline-flex;align-items:center;gap:7px}
+.featured-platform-icon{display:block;width:17px;height:17px;flex:0 0 17px}
+.youtube-platform-icon{color:#e62117}
+.snapchat-platform-icon{width:18px;height:18px;flex-basis:18px}
+.featured-platform-link span{line-height:1.2}
