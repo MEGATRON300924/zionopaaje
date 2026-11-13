@@ -190,3 +190,10 @@
 
 ### Verification log
 - 2026-11-13: Reviewed `plan.txt`, homepage, global metadata/JSON-LD, About, Projects, Socials, robots, sitemap and manifest source. Public web search surfaced MAX AI and Crunchbase but did not establish current personal-domain index coverage.
+
+- First implementation slice committed:
+  - Plan/audit entry: `35e082662393e1459aabb77c8c73cf3e6c918a13`
+  - Web manifest icon corrected to `/tab_icon.jpg` with `image/jpeg`: `f75dbba1c8a16e3d29ab8857a31643e3a5849d97`
+  - Personal metadata and Person JSON-LD corrected (concise title, current description, removed student-as-alumnus claim, limited Person.founder to The Tron Forge Limited, refreshed WebPage dateModified): `265cfa3be1e449e0eea72b42d8cbaa06d0d47230`
+- Vercel production deployment created for the latest code commit: `dpl_7QZtzBnRBpAQejq4seX4TcSfWeg5`; last observed state `QUEUED`, so build and production deployment are not yet confirmed.
+- Source-level checks: all intended replacements were confirmed in the committed content. Next verify Vercel reaches READY, inspect the live manifest and rendered metadata, then continue with sitemap/Search Console and content/entity consistency work.
