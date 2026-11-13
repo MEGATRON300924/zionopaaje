@@ -197,3 +197,12 @@
   - Personal metadata and Person JSON-LD corrected (concise title, current description, removed student-as-alumnus claim, limited Person.founder to The Tron Forge Limited, refreshed WebPage dateModified): `265cfa3be1e449e0eea72b42d8cbaa06d0d47230`
 - Vercel production deployment created for the latest code commit: `dpl_7QZtzBnRBpAQejq4seX4TcSfWeg5`; last observed state `QUEUED`, so build and production deployment are not yet confirmed.
 - Source-level checks: all intended replacements were confirmed in the committed content. Next verify Vercel reaches READY, inspect the live manifest and rendered metadata, then continue with sitemap/Search Console and content/entity consistency work.
+
+- 2026-11-13 follow-up verification:
+  - Vercel production deployment `dpl_7QZtzBnRBpAQejq4seX4TcSfWeg5` reached `READY` for commit `265cfa3be1e449e0eea72b42d8cbaa06d0d47230`.
+  - Live `https://www.zionopaaje.name.ng` returned HTTP 200 and serves the corrected SEO title, description, canonical metadata and Person JSON-LD.
+  - Live `/sitemap.xml` returned HTTP 200 and lists the homepage, About, Projects, Gallery, News and news articles, Socials, Contact and Now pages.
+  - Live `/robots.txt` returned HTTP 200, allows crawling and declares the sitemap.
+  - Root `https://zionopaaje.name.ng` redirects permanently to the www host; the HTML canonical and sitemap currently point to the non-www URL. This is a consistency item to investigate before changing anything; verify redirect/canonical configuration in Search Console.
+  - Google Search Console property is user-reported as already set up, but access, sitemap submission state, URL indexing and performance reports have not been inspected.
+  - LinkedIn exists per user; profile URL and completeness have not yet been audited. User asked to defer photo/image work.
