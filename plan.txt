@@ -148,3 +148,45 @@
 - The latest Vercel deployment observed for the icon component commit `c27224c85c23e280c5a365722a42ea27aaf01a18` reached `READY` (`dpl_37mR6zjtJMLrUm8rWroWqYMGpAiu`).
 - A deployment for the final styling/dimension commits could not be started: Vercel returned HTTP 402 `api-deployments-free-per-day` (more than 100 deployments; retry after 24 hours). Therefore the final latest commit is committed but not yet verified as deployed.
 - Next step: once the Vercel deployment quota resets, deploy latest `main` and verify the production homepage.
+
+
+## Current task: Global online presence and knowledge-panel readiness
+
+### User objective
+- Build a stronger, credible international online presence for Zion Opaaje / MegaTron, The Tron Forge Limited, and The MAX AI Ecosystem.
+- Public positioning: global technology founder and builder.
+- Priority: all three connected identities.
+
+### Initial audit (2026-11-13)
+- Public search surfaced the official MAX AI website and a Crunchbase organization listing that identifies Zion Opaaje as its founder; the personal domain did not surface in the initial broad search results.
+- The MAX AI website currently describes the product as a voice-first personal assistant and distinguishes available services from experiences still in development. Keep public claims aligned with actual release status.
+- The personal website already has Person, Organization, SoftwareApplication, WebSite and WebPage JSON-LD, canonical metadata, social profile links, a robots route and a sitemap route.
+- Source audit found two high-priority structured-data / identity issues:
+  1. Person.alumniOf names Miva Open University even though the biography says the user is currently studying there; alumniOf implies alumnus status.
+  2. Person.founder points to both The Tron Forge Limited and a SoftwareApplication entity for The MAX AI Ecosystem. The MAX AI entity is already correctly linked through creator; remove the incorrect founder relationship to the SoftwareApplication.
+- Source audit found app/manifest.ts still points to `/favicon (1).png`, while the established favicon is `/tab_icon.jpg` and layout metadata already uses that asset.
+- Search snippets and crawl results are not sufficient to prove Google indexing, Knowledge Panel changes, or live page rendering. Google Search Console ownership/indexing status and browser checks remain unverified.
+
+### First implementation slice
+- Correct the manifest icon to use the established `/tab_icon.jpg` asset with JPEG MIME type.
+- Correct Person JSON-LD by removing the unsupported alumniOf claim and the invalid founder link to the MAX AI SoftwareApplication.
+- Tighten the personal homepage title/description for clear entity identity and update the WebPage dateModified to the current content-change date.
+- Keep verified profile links and existing entity IDs stable.
+- Do not add unverified awards, press mentions, credentials, follower counts, or new social accounts.
+
+### Status
+- Audit complete; first implementation slice in progress.
+- Repository: `MEGATRON300924/zionopaaje`, branch `main`.
+- Build, deployment and live Google indexing checks pending.
+
+### Next priorities
+1. Complete and verify the first technical SEO correction slice.
+2. Audit every biography, project and company fact against primary sources; remove outdated or speculative statements.
+3. Ensure consistent official identity links across personal, company and MAX AI websites.
+4. Add a substantive founder biography and dated build log / press-ready media page with original evidence and contact details.
+5. Set up Google Search Console for the canonical domain, submit sitemap, inspect key URLs and monitor indexing enhancements.
+6. Build an editorial cadence: one substantial founder/build article and one demonstrable product update each week; distribute excerpts to LinkedIn, X, YouTube and relevant developer communities.
+7. Pursue independent coverage and legitimate founder / product directory listings; never buy fake press, backlinks or reviews.
+
+### Verification log
+- 2026-11-13: Reviewed `plan.txt`, homepage, global metadata/JSON-LD, About, Projects, Socials, robots, sitemap and manifest source. Public web search surfaced MAX AI and Crunchbase but did not establish current personal-domain index coverage.
