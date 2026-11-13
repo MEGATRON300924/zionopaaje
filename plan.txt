@@ -245,3 +245,7 @@ Update the homepage title, meta description, Open Graph identity, and existing S
 - Confirm the final source commit receives a successful production deployment.
 - Inspect rendered homepage HTML and canonical URLs on the live domain.
 - Submit/inspect the canonical homepage in Google Search Console and monitor Google-selected site-name display; metadata/schema are signals, not a guarantee of Google's final presentation.
+
+
+### Deployment blocker update (2026-11-13)
+- Vercel deployment check: latest observed deployment `dpl_D56auvXEijuxvRMN95UcFoDjoEvU` reached READY for commit `4465ac47873b5467345dc55996ae467f02bc6817`; it does not include the later final plan commit `e263955b5a6914da967e9844745065caed3ed9d7`. A manual production deployment attempt was blocked by Vercel HTTP 402 `api-deployments-free-per-day` (retry after 24 hours). Live deployment of the final source state is not confirmed.
