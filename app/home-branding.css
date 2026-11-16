@@ -5,10 +5,12 @@
 .linktree-button:hover{background:#32d951;transform:translateY(-2px);box-shadow:0 10px 24px rgba(67,230,96,.28)}
 .linktree-button img{width:19px;height:19px;object-fit:contain;display:block}
 .linktree-button span{font-size:16px;line-height:1}
+.f6s-follow-button{display:inline-flex;align-items:center;justify-content:center;min-height:22px;line-height:0;vertical-align:middle;transition:opacity .2s ease,transform .2s ease}
+.f6s-follow-button:hover{opacity:.86;transform:translateY(-1px)}
+.f6s-follow-button img{display:block;width:78px;height:22px;max-width:none;padding:0;margin:0;border:0;object-fit:contain}
 .identity span{display:inline-flex;align-items:center;gap:8px}
 .identity span img{width:19px;height:19px;object-fit:contain;flex:0 0 19px;border-radius:4px}
-@media(max-width:600px){.actions{align-items:stretch}.actions>a{justify-content:center}.linktree-button{min-width:132px}.hero-eyebrow{font-size:9px;letter-spacing:1.4px}.hero-eyebrow img{width:19px;height:19px;flex-basis:19px}.identity{gap:8px}.identity span{font-size:11px;padding:7px 10px}}
-
+@media(max-width:600px){.actions{align-items:stretch}.actions>a{justify-content:center}.linktree-button{min-width:132px}.f6s-follow-button{align-self:center;min-height:22px}.f6s-follow-button img{width:78px;height:22px}.hero-eyebrow{font-size:9px;letter-spacing:1.4px}.hero-eyebrow img{width:19px;height:19px;flex-basis:19px}.identity{gap:8px}.identity span{font-size:11px;padding:7px 10px}}
 
 /* Featured social posts */
 .featured-posts{background:#f6f7f9;padding-top:105px;padding-bottom:112px;overflow:hidden}
