@@ -249,3 +249,21 @@ Update the homepage title, meta description, Open Graph identity, and existing S
 
 ### Deployment blocker update (2026-11-13)
 - Vercel deployment check: latest observed deployment `dpl_D56auvXEijuxvRMN95UcFoDjoEvU` reached READY for commit `4465ac47873b5467345dc55996ae467f02bc6817`; it does not include the later final plan commit `e263955b5a6914da967e9844745065caed3ed9d7`. A manual production deployment attempt was blocked by Vercel HTTP 402 `api-deployments-free-per-day` (retry after 24 hours). Live deployment of the final source state is not confirmed.
+
+
+## Current task: Add F6S follow badge to personal portfolio
+
+### Requested
+- Add the official F6S follow badge supplied by the user to the personal portfolio homepage.
+- F6S profile: https://www.f6s.com/member/opaajezion?follow=1
+- Badge image: https://www.f6s.com/images/f6s-follow-primary.png
+- Preserve the supplied badge dimensions (78 × 22) and link it to the supplied follow URL.
+- Repository: `MEGATRON300924/zionopaaje`, branch: `main`.
+
+### Implementation
+- Status: In progress.
+- Target: Homepage action links in `app/page.tsx`; add compact responsive alignment styles in `app/home-branding.css`.
+- Keep existing portfolio links and layout intact.
+
+### Verification
+- Pending source review, commit confirmation, and production deployment check.
