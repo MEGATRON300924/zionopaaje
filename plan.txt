@@ -278,3 +278,25 @@ Update the homepage title, meta description, Open Graph identity, and existing S
 - CSS commit: `c399b7d2b46447b90b11cb34dc32a726142f491f`.
 - Source-level verification: the F6S anchor, follow URL, official badge image URL, 78 × 22 dimensions, and responsive CSS are present in the committed files.
 - Build / production deployment verification: pending.
+
+
+## Current task: Add MegaTron aliases to personal identity structured data
+
+### Request
+- Add `MegaTron` and `MEGATRON300924` as alternate names for the Person entity representing Zion Opaaje.
+- Strengthen the personal website's structured identity signals without creating a duplicate Person entity.
+
+### Implementation and verification (2026-11-18)
+- Audited `app/layout.tsx` and confirmed the existing Person JSON-LD node already contains `alternateName: ["MegaTron", "MEGATRON300924"]`; retained that correct Person-level mapping.
+- Added `MEGATRON300924` to the WebSite node's `alternateName` list so the site's identity aliases are consistent.
+- Removed stale `sameAs` references to the deleted personal Wikidata item (Q140722064) and deleted Wikimedia Commons file; replaced those two dead references with the user's existing Linktree and F6S profile URLs.
+- Updated WebPage `dateModified` to `2026-11-18`.
+- Changed file: `app/layout.tsx`.
+- Code commit: `a163017231df4a5e319152430cfdc139ae6543cd`.
+- Source verification: Person alternateName still includes both requested aliases; WebSite alternateName now includes both aliases; dead personal Wikidata/Commons URLs are absent from Person.sameAs.
+- Build / Vercel deployment / live rendered JSON-LD verification: pending. Do not treat this as live until deployment reaches READY and the production HTML is inspected.
+
+### Next steps
+1. Verify Vercel build and production deployment for the code commit above.
+2. Inspect the live JSON-LD and confirm both aliases appear in Person and WebSite nodes.
+3. Continue strengthening independent, verifiable online references; structured data alone does not guarantee a Google Knowledge Panel or Wikidata retention.
