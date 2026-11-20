@@ -10,7 +10,7 @@ const profiles:Profile[]=[
 {name:"Threads",detail:"@opaajezion",href:"https://www.threads.com/@opaajezion",icon:"/threads-app-icon.png"},
 {name:"Snapchat",detail:"@megatron300924",href:"https://www.snapchat.com/add/megatron300924?share_id=vaKssTsOxlc&locale=en-GB",icon:"/snapchat-social-media-communication-svgrepo-com.svg"},
 {name:"YouTube",detail:"@opaajezion",href:"https://youtube.com/@opaajezion",icon:"/icons8-youtube-96.png"},
-{name:"The Tron Forge Limited",detail:"Company website",href:"https://thetronforge.name.ng",icon:"/ttfl.jpg"},
+{name:"The Tron Forge Limited",detail:"Company website",href:"https://thetronforge.name.ng",icon:"/ttfl%20(2).jpg"},
 {name:"The MAX AI Ecosystem",detail:"Ecosystem website",href:"https://max-ai.name.ng",icon:"/maxai.png"},
 {name:"TTFL Store",detail:"Marketplace website",href:"https://ttflstore.name.ng",icon:"/ttfl-store.png"},
 {name:"Wikimedia Commons",detail:"Profile image",href:"https://commons.wikimedia.org/wiki/File:Zion_Opaaje%27s_Picture.jpg"}];
