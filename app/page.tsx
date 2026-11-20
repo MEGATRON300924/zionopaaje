@@ -10,7 +10,7 @@ export default async function Home(){
         <h1>Building digital<br/><em>technologies for the future.</em></h1>
         <p className="lead">I’m Zion Opaaje, also known as MegaTron. I build software, AI products and digital ventures through The Tron Forge Limited.</p>
         <div className="actions"><a href="/projects" className="primary">Explore my work <span aria-hidden="true">→</span></a><a href="/about" className="secondary">About me</a><a href="https://linktr.ee/opaajezion" className="linktree-button" target="_blank" rel="noopener noreferrer"><img src="/lintr.png" alt="" aria-hidden="true"/>Linktree <span aria-hidden="true">↗</span></a><a href="https://www.f6s.com/member/opaajezion?follow=1" className="f6s-follow-button" target="_blank" rel="noopener noreferrer" title="Follow Zion Opaaje on F6S"><img src="https://www.f6s.com/images/f6s-follow-primary.png" width="78" height="22" alt="Follow Zion Opaaje on F6S" /></a></div>
-        <div className="identity"><span><img src="/ttfl.jpg" alt=""/>Founder · The Tron Forge Limited</span><span><img src="/maxai.png" alt=""/>Creator · The MAX AI Ecosystem</span><span><img src="/ttfl-store.png" alt=""/>Founder / Builder · TTFL Store</span></div>
+        <div className="identity"><span><img src="/ttfl%20(2).jpg" alt=""/>Founder · The Tron Forge Limited</span><span><img src="/maxai.png" alt=""/>Creator · The MAX AI Ecosystem</span><span><img src="/ttfl-store.png" alt=""/>Founder / Builder · TTFL Store</span></div>
       </div>
       <div className="hero-profile"><div className="portrait-frame"><img src="https://www.max-ai.name.ng/zionopaaje.png" alt="Zion Opaaje"/></div><div className="portrait-caption"><strong>Zion Opaaje</strong><span>MegaTron · MEGATRON300924</span></div></div>
     </section>
