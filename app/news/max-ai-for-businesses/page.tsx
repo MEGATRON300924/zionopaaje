@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 const siteUrl = "https://zionopaaje.name.ng";
 const articleUrl = `${siteUrl}/news/max-ai-for-businesses`;
 const maxLogo = `${siteUrl}/maxai.png`;
-const ttflLogo = `${siteUrl}/ttfl.jpg`;
+const ttflLogo = `${siteUrl}/ttfl%20(2).jpg`;
 const datePublished = "2026-10-19";
 const headline = "Introducing MAX AI for Businesses: A Connected AI Ecosystem for Hotels, Restaurants, and Modern Businesses";
 const description = "Zion Opaaje introduces the MAX AI for Businesses initiative from The Tron Forge Limited, exploring connected AI solutions for hotels, restaurants and modern businesses.";
@@ -106,7 +106,7 @@ export default function MaxAIBusinessesArticlePage() {
         </div>
         <div className="article-cover" role="img" aria-label="Official logos of the MAX AI Ecosystem and The Tron Forge Limited" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "8%", padding: "9%", background: "linear-gradient(145deg, #101722, #1c2635)", borderColor: "#303b4c" }}>
           <img src="/maxai.png" alt="Official MAX AI Ecosystem logo" style={{ width: "43%", height: "auto", maxHeight: "75%", objectFit: "contain", padding: 12, background: "#fff", borderRadius: 18 }} />
-          <img src="/ttfl.jpg" alt="Official The Tron Forge Limited logo" style={{ width: "34%", height: "auto", maxHeight: "70%", objectFit: "contain", padding: 12, background: "#fff", borderRadius: 18 }} />
+          <img src="/ttfl%20(2).jpg" alt="Official The Tron Forge Limited logo" style={{ width: "34%", height: "auto", maxHeight: "70%", objectFit: "contain", padding: 12, background: "#fff", borderRadius: 18 }} />
         </div>
       </header>
 
