@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 const siteUrl = "https://zionopaaje.name.ng";
 const articleUrl = `${siteUrl}/news/introducing-zion-opaaje`;
 const profileImage = "https://www.max-ai.name.ng/zionopaaje.png";
-const ttflLogo = `${siteUrl}/ttfl.jpg`;
+const ttflLogo = `${siteUrl}/ttfl%20(2).jpg`;
 const maxLogo = `${siteUrl}/maxai.png`;
 const datePublished = "2026-10-08";
 
